@@ -88,6 +88,8 @@ Spawn positions are constant.
 
 <img class='center bordered' width='70%' src='https://media.discordapp.net/attachments/1547663952132046938/1554785825588256848/image.png?backend=b2&ex=6abe26a3&is=6abcd523&hm=4e48d956a5f0f773076128a10422f43ebd7fccc96dd52c350d5a8493ec3ad7f7&=&format=webp&quality=lossless'>
 
+(image credit: elisethechemist)
+
 Additionally:
 - Each add will respawn 40 seconds after being killed.
 - Each add gains a defiance bar when hitting 25% HP and drops 3 orbs when that bar is broken or when it's killed. - Adds cannot give orbs twice
