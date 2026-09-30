@@ -125,7 +125,9 @@ It is difficult to stay melee with them active: it's very easy to get too close 
 
 ### Greens
 
-Target the fixate and the two closest players: try to bait them.
+Target the fixate and the two closest players to the boss. You get less greens the less players you have alive.
+
+Have a maximum range. This is impractical to abuse outside of the first green.
 
 Require at least three players in each. Failing them results in stacks of <img class='inline empowered'> and downstates the group.
 
