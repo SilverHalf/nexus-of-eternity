@@ -41,8 +41,10 @@ $gold: #e0be00;
 }
 
 .adapt-width-30 {
-    width: 30%;
+    width: 32%;
     max-width: 400px;
+    background-color: $sidebar-color;
+    padding: 5px;
 }
 
 .adapt-width-50 {
@@ -123,6 +125,7 @@ $gold: #e0be00;
     width: 90%;
   }
   .adapt-width-30 {
+    margin-top: 10px;
     width: 90%;
   }
   .adapt-width-50 {
@@ -196,6 +199,11 @@ $gold: #e0be00;
     cursor: pointer;
     border-color: white;
     transform: scale(1.02);
+}
+
+.margins {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .fixed {
