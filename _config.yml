@@ -1,8 +1,34 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Nexus of Eternity
+description: Strategy guide and mechanical reference for the Nexus of Eternity encounter.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://silverhalf.github.io/nexus-of-eternity
+
+favicon_ico: "/images/favicon.ico"
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "Source Code": 
+    - "https://github.com/SilverHalf/nexus-of-eternity"
+
+aux_links_new_tab: true
+
+color_scheme: default
+
+callouts:
+  note:
+    title: Note
+    color: notes
+
+  warning:
+    title: Warning
+    color: warning
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+sass:
+  quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
+  silence_deprecations: ['import'] # https://github.com/just-the-docs/just-the-docs/issues/1607
+
