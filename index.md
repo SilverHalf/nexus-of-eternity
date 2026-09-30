@@ -23,7 +23,7 @@ This is a quick collection of information on the Challenge Mode of the Nexus of 
 {: .no_toc}
 
 - First kill by [SC] (currently no PoV or log).
-- Second kill by [INT]: <img class='inline youtube'> <img class='inline troubadour'> [PoV](https://youtu.be/BkcibOuMN9g) - <img class='inline log'> [Log](https://dps.report/MsKX-20260930-014037-fixed_boss).
+- Second kill by [INT]: <img class='inline youtube'> <img class='inline troubadour'> [PoV](https://youtu.be/BkcibOuMN9g) <img class='inline youtube'> <img class='inline scourge'> [PoV](https://www.youtube.com/watch?v=ukddvwvGFUU) - <img class='inline log'> [Log](https://dps.report/MsKX-20260930-014037-fixed_boss).
 
 <img class=divider>
 
