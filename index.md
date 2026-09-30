@@ -22,8 +22,8 @@ This is a quick collection of information on the Challenge Mode of the Nexus of 
 #### Current Kills
 {: .no_toc}
 
-- First kill by [SC] (currently no PoV or log).
-- Second kill by [INT]: <img class='inline youtube'> <img class='inline troubadour'> [PoV](https://youtu.be/BkcibOuMN9g) <img class='inline youtube'> <img class='inline scourge'> [PoV](https://www.youtube.com/watch?v=ukddvwvGFUU) - <img class='inline log'> [Log](https://dps.report/MsKX-20260930-014037-fixed_boss).
+- First kill by [SC]: <img class='inline youtube'> <img class='inline troubadour'> [Celetroub PoV](https://www.youtube.com/watch?v=t49DVBkJmtE) (no log due to no ArcDPS)
+- Second kill by [INT]: <img class='inline youtube'> <img class='inline troubadour'> [Healtroub PoV](https://youtu.be/BkcibOuMN9g) <img class='inline youtube'> <img class='inline scourge'> [DPS PoV](https://www.youtube.com/watch?v=ukddvwvGFUU) - <img class='inline log'> [Log](https://dps.report/MsKX-20260930-014037-fixed_boss).
 
 <img class=divider>
 
@@ -121,6 +121,8 @@ Greens cannot be stacked or distorted.
 ---
 
 ### Phase 1
+
+Trigger the fight by sending in only one person. This will result in only one green spawning at the start.
 
 Play it much the same as in normal mode. *DO NOT* use reflects in this phase: if you reflect the staff's projectile attack, it bounces off and results in several very high damage AoEs.
 
