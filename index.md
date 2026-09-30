@@ -98,6 +98,21 @@ Additionally:
 
 ---
 
+### Fixation
+
+Selects one player randomly. Can be reset with stealth.
+
+Will always select the closest person if nobody else is in sight: unreliable and impractical everywhere except for the very beginning of the fight.
+
+Has a maximum range (between 2-3k?).
+
+Most attacks will focus the fixated player, most noticeably:
+- The boss will dash towards them
+- They will always gain a green
+- They will always gain a spread
+
+---
+
 ### Worldbreaker
 
 Attack that starts appearing from p2 onwards. Spawns six red arrows that [down? kill?] players. The arrows then become walls that inflict <img class='inline knockback'> and high <img class='inline burning'> to anyone close to them.
@@ -109,6 +124,8 @@ It is difficult to stay melee with them active: it's very easy to get too close 
 ---
 
 ### Greens
+
+Target the fixate and the two closest players: try to bait them.
 
 Require at least three players in each. Failing them results in stacks of <img class='inline empowered'> and downstates the group.
 
