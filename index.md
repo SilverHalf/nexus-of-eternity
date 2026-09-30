@@ -22,7 +22,7 @@ This is a quick collection of information on the Challenge Mode of the Nexus of 
 #### Current Kills
 {: .no_toc}
 
-- First kill by [SC]: <img class='inline youtube'> <img class='inline troubadour'> [Celetroub PoV](https://www.youtube.com/watch?v=t49DVBkJmtE) (no log due to no ArcDPS)
+- First kill by [SC]: <img class='inline youtube'> <img class='inline troubadour'> [Celetroub PoV](https://www.youtube.com/watch?v=t49DVBkJmtE) - <img class='inline log'> [Log](https://dps.report/oOYc-20260930-050224_boss)
 - Second kill by [INT]: <img class='inline youtube'> <img class='inline troubadour'> [Healtroub PoV](https://youtu.be/BkcibOuMN9g) <img class='inline youtube'> <img class='inline scourge'> [DPS PoV](https://www.youtube.com/watch?v=ukddvwvGFUU) - <img class='inline log'> [Log](https://dps.report/MsKX-20260930-014037-fixed_boss).
 
 <img class=divider>
@@ -55,7 +55,7 @@ Most groups seem to be progressing with a similar composition:
 - Heal <img class='inline paragon'> Paragons running ???
 - BoonDPS <img class='inline specter'> Specter or <img class='inline luminary'> Luminary. Specter runs double venoms and <img class='inline smoke-screen'> Smoke Screen, spear secondary for additional CC.
 - Possibly toad evoker can be used for more DPS at the cost of CC.
-- DPS are usually <img class='inline scourge'> Scourges or condition <img class='inline weaver'> Weavers. Scourges are running <img class='inline breach'> Ghastly Breach for extra boonstrip.
+- DPS are usually <img class='inline scourge'> Scourges or condition <img class='inline weaver'> Weavers. Some Scourges are running <img class='inline breach'> Ghastly Breach for extra boonstrip, others will run plaguelands.
 
 General tips:
 - Run trailblazer gear when possible for extra survivability, there is a lot of incoming damage.
@@ -69,7 +69,7 @@ General tips:
 
 ### <img class='inline empowered'> Empowered
 
-Each stack increases outgoing damage by 1% and reduces incoming damage by 1%.
+Each stack increases Vloxx's outgoing damage by 5% and reduces incoming damage by 1%.
 
 - Vloxx gains 10 <img class='inline empowered'> stacks after each CC at 70%, 40% and 10%.
 - Champions grant Vloxx a <img class='inline empowered'> stack 24s after they spawn and then every further 20s they are alive.
@@ -115,9 +115,9 @@ Most attacks will focus the fixated player, most noticeably:
 
 ### Worldbreaker
 
-Attack that starts appearing from p2 onwards. Spawns six red arrows that [down? kill?] players. The arrows then become walls that inflict <img class='inline knockback'> and high <img class='inline burning'> to anyone close to them.
+Attack that starts appearing from p2 onwards. Spawns six red arrows that down players. The arrows then become walls that inflict <img class='inline knockback'> and high <img class='inline burning'> to anyone close to them.
 
-It is possible to walk through them with <img class='inline stability'>. It also does not extend through the boss's hitbox, meaning you can walk through it with no problem.
+It walls do not extend through the boss's hitbox, meaning you can walk through it with no problem.
 
 It is difficult to stay melee with them active: it's very easy to get too close and take excessive damage. This is why most groups will play ranged builds.
 
@@ -129,7 +129,7 @@ Target the fixate and the two closest players to the boss. You get less greens t
 
 Have a maximum range. This is impractical to abuse outside of the first green.
 
-Require at least three players in each. Failing them results in stacks of <img class='inline empowered'> and downstates the group.
+Require at least three players in each. Failing them results in 3 stacks of <img class='inline empowered'> and lifts the players inside the green.
 
 Greens cannot be stacked or distorted.
 
