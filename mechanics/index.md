@@ -88,6 +88,79 @@ At the beginning of this phase, Vloxx will lose his external golem armor and tra
 
 <img class=divider>
 
+## General Mechanics
+
+These mechanics are present for the entirety of the fight independent of the phase.
+
+|**Mechanic**|**Common Name**|**Brief Description**|
+| <img class='inline empowered'> [Empowered] | Stacks | Buff applied to Vloxx on failed mechanics. |
+| <img class='inline ascension'> [Ascension] | Stacks | Buff applied to players to counteract <img class='inline empowered'> [Empowered]. |
+| <img class='inline fixate'> [Fixate] | Tank | Randomly selects a player to become the target for Vloxx's attacks. |
+| [Judgement of Eternity] | Greens | Three greens requiring three people each. |
+| [Probability Distribution] | Pools | Three large AoEs that leave lingering pools. |
+
+---
+
+### <img class='inline empowered'> Empowered
+
+<img class='inline empowered'> [Empowered] is an effect granted to Vloxx by several sources over the course of the encounter. Each stack grants him 5% increased outgoing damage and 1% reduced incoming damage, stacking additively. Additionally, Vloxx starts gaining boons at certain stack thresholds:
+- At 5 <img class='inline empowered'> stacks, he periodically gains <img class='inline might'> [Might].
+- At 15 <img class='inline empowered'> stacks, he periodically gains 25 <img class='inline might'> [Might].
+- At 50 <img class='inline empowered'> stacks, he periodically gains <img class='inline resolution'> [Resolution].
+- At 75 <img class='inline empowered'> stacks, he periodically gains <img class='inline protection'> [Protection].
+
+Vloxx can gain <img class='inline empowered'> [Empowered] in three ways:
+- [Champion Weapons](#weapons) will grant him one <img class='inline empowered'> stack 24 seconds after spawning and one additional <img class='inline empowered'> stack at 20 second intervals following.
+- [Visions of Eternity] will grant him 10 <img class='inline empowered'> stacks when he either completes the cast or his <img class='inline defiance'> [Defiance Bar] is broken.
+- Whenever a player loses one or more stacks of <img class='inline ascension'> [Ascension], Vloxx will gain an equivalent number of <img class='inline empowered'> [Empowered].
+
+{: .note}
+This counts dead players as well, since they "lose" 10 <img class='inline ascension'> stacks on dying. Vloxx will therefore gain 10 <img class='inline empowered'> [Empowered] for each dead player.
+
+Additionally, whenever a player gains a stack of <img class='inline ascension'> [Ascension], Vloxx will *lose* a stack of <img class='inline empowered'> [Empowered].
+
+---
+
+### <img class='inline ascension'> Ascension
+
+<img class='inline ascension'> [Ascension] is a player buff that is diametrically opposed to <img class='inline empowered'> [Empowered]. All players will begin the encounter with 10 <img class='inline ascension'> stacks, and will immediately die if they ever reach zero.
+
+Players *lose* <img class='inline ascension'> stacks whenever they fail certain mechanics:
+- [Judgement of Eternity] - if a green fails, each player inside it loses 3 <img class='inline ascension'> stacks.
+- [Ascension's Sacrifice] - if a chain fails, the chained player loses a <img class='inline ascension'> stack.
+
+Whenever a player loses <img class='inline ascension'> stacks, Vloxx will gain the same number of <img class='inline empowered'> [Empowered].
+
+Players will *gain* <img class='inline ascension'> stacks whenever they pick up *orbs*. Three of these drop from [Champion Weapons](#weapons) whenever their <img class='inline defiance'> [Defiance Bar] is broken.
+
+---
+
+### <img class='inline fixate'> Fixate
+
+This effect is applied to a random player in Vloxx's cone of vision. If no one is in sight, it will select the closest person instead. This player will gain an <img class='inline fixate-icon'> icon over their head showing the effect, and will become the target for most of Vloxx's skills.
+
+The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out.
+
+---
+
+### Judgement of Eternity
+
+Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green will remove two stacks of <img class='inline ascension'> [Ascension] from all players inside its area and <img class='inline float'> [Float] them.
+
+Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!](https://wiki.guildwars2.com/wiki/%22We_Will_Never_Yield!%22) or <img class='inline august-queen'> [Tale of the August Queen](https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen), unlike other similar mechanics.
+
+Greens have a maximum range of 3000 units. The number of greens in this mechanic depends on the number of living players: with less players alive, fewer greens will spawn so that the mechanic is always solvable.
+
+---
+
+### Probability Distribution
+
+Summons large AoEs on the <img class='inline fixate-icon'> [Fixate] and two additional random players. After tracking their targets for five seconds, they will become stationary. Players then have three seconds to leave their area while they fill and turn into stationary pools, which pulse damage, strip boons and inflict <img class='inline cripple'> [Cripple] on anyone in their area.
+
+AoEs can and should be stacked together to save space.
+
+<img class=divider>
+
 ## Enemies
 
 The Nexus of Eternity encounter is characterized by a large amount of enemy adds that enter the picture at different points in the encounter. These can mostly be divided into two groups: *split phase adds* and *weapon adds*.
@@ -184,23 +257,12 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 
 <img class=divider>
 
-## General Mechanics
-
-### <img class='inline ascension'> Ascension and <img class='inline empowered'> Empowered
-
-<img class='inline empowered'> [Empowered] is an effect granted to Vloxx by several sources over the course of the encounter. Each stack grants him 5% increased outgoing damage and 1% reduced incoming damage, stacking additively.
-
-### Judgement of Eternity
-
-### Probability Distribution
-
-### Visions of Eternity
-
-### Threshold of Eternity
-
-<img class=divider>
-
 ## Staff Attacks
+
+These attacks can be used by Vloxx during the first phase or the final phase, and by the [Champion Staff].
+
+|**Mechanic**|**Common Name**|**Brief Description**|
+| [Annihilating Orb] | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
 
 ### Annihilating Orb
 
@@ -236,7 +298,11 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 
 <img class=divider>
 
-## Effects
+## Special Attacks
+
+### Visions of Eternity
+
+### Threshold of Eternity
 
 <img class=divider>
 
@@ -261,8 +327,10 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 [Excision Extremis]: #excision-extremis
 [Slice Through Reality]: #slice-through-reality
 
-[Ascension]: #ascension-and--empowered
-[Empowered]: #ascension-and--empowered
+[Ascension]: #-ascension
+[Empowered]: #-empowered
+[Fixate]: #-fixate
+[Fixated]: #-fixate
 
 <!-- Links to classes and specializations -->
 
@@ -270,8 +338,17 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 
 <!-- Links to buffs and debuffs -->
 [Invulnerable]: https://wiki.guildwars2.com/wiki/Invulnerability
+[Might]: https://wiki.guildwars2.com/wiki/Might
+[Resolution]: https://wiki.guildwars2.com/wiki/Resolution
+[Protection]: https://wiki.guildwars2.com/wiki/Protection
+[Float]: https://wiki.guildwars2.com/wiki/Float
+[Downstate]: https://wiki.guildwars2.com/wiki/Downstate
+[Cripple]: https://wiki.guildwars2.com/wiki/Cripple
 
 <!-- Links to enemies and enemy skills -->
+[Champion Staff]: #weapons
+[Champion Spear]: #weapons
+[Champion Sword]: #weapons
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
