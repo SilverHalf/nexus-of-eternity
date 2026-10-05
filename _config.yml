@@ -5,6 +5,7 @@ theme: just-the-docs
 url: https://silverhalf.github.io/nexus-of-eternity
 
 favicon_ico: "/images/favicon.ico"
+logo: "/images/logo.png"
 
 aux_links:
   "Source Code": 
