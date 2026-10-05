@@ -33,58 +33,68 @@ This page contains a detailed reference of the various attacks and mechanics pre
 
 ## Fight Structure
 
-The battle against Vloxx is divided into three main phases, three split phases and a final phase. The main phases are each styled around one of his weapons: *Staff*, *Spear* and *Sword*.
-
-Except for a few of attacks that are present throughout all phases, each main phase is limited to a subset of Vloxx's mechanics that are specific to the phase's weapon. The final phase instead alternates attacks from all three weapons.
-
-Each split phase starts with Vloxx teleporting to the center of the arena and gaining <img class='inline defensive'> [Defensive Inspiration](). An enemy champion will them spawn, along with two elites. The type of enemy depends on the phase:
-- 70% - [Cosmic Piercer](#split-phase-enemies)
-- 40% - [Cosmic Bulwark](#split-phase-enemies)
-- 10% - [Cosmic Sunderer](#split-phase-enemies)
-
-Killing this champion unlock Vloxx's <img class='inline defiance'> [Defiance Bar], allowing the squad to break it and the fight to continue into the following phase.
+The battle against Vloxx is divided into three main phases, three split phases and a final phase.
 
 ---
 
-### 100% - 70% - Staff Phase
+### Main Phases
+
+Vloxx's main phases are styled around his three weapons: *Staff*, *Spear* and *Sword*. Each main phase is mostly limited to a set of mechanics specific to the phase's weapon, plus a few attacks that are present in all three.
+
+Vloxx's behaviour in the main phases is based on a priority-cooldown system:
+- All active mechanics have their own *cooldown* and *priority*.
+- The boss will always cast the highest priority skill that is off-cooldown.
+
+While this is similar in concept to bosses such as [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html) and [Ura](https://silverhalf.github.io/mount-balrior/ura/overview.html), in practice Vloxx's relatively short cooldowns and absence of skill interruptions means the boss will usually present the same order of mechanics consistently for each phase.
+
+<div class="sidebar-background" markdown=block>
+#### 100% - 70% - Staff Phase
 
 Vloxx's staff is modeled after [Ancora Pax](https://wiki.guildwars2.com/wiki/Ancora_Pax). This phase is characterized by a large amount of projectiles: reflecting or blocking these can be potentially dangerous since some will bounce off, resulting in several potentially dangerous AoEs.
 
-#### Weapon Skills
-{:.no_toc}
-[Annihilating Orb], [Ascension's Sacrifice], [Eternal Reflection], [Surrounding Curse]
+*Weapon Skills:* [Annihilating Orb], [Ascension's Sacrifice], [Eternal Reflection], [Surrounding Curse]
+</div>
 
----
-
-### 70% - 40% - Spear Phase
+<div style="padding:10px" markdown=block>
+#### 70% - 40% - Spear Phase
 
 Vloxx's spear is modeled after [Ancora Bellum](https://wiki.guildwars2.com/wiki/Ancora_Bellum). This phase is mostly characterized by [Worldpiercer] heavily limiting squad movement while [Raging Storm] requires either permanent projectile block or constant repositioning.
 
-#### Weapon Skills
-{:.no_toc}
-[Cosmic Charge], [Raging Storm], [Thousand Strikes], [Worldpiercer]
+*Weapon Skills:* [Cosmic Charge], [Raging Storm], [Thousand Strikes], [Worldpiercer]
+</div>
 
----
-
-### 40% - 10% - Sword Phase
+<div class="sidebar-background" markdown=block>
+#### 40% - 10% - Sword Phase
 
 Vloxx's sword is modeled after [Wages of Stars](https://wiki.guildwars2.com/wiki/Wages_of_Stars). This phase is characterized by a large amount of AoE Damage, especially from [Echoing Blade] and [Excision Extremis]. This requires a lot of attention from the group to either out-heal or avoid most of the danger.
 
-#### Weapon Skills
-{:.no_toc}
-[Division Eternal], [Echoing Blade], [Excision Extremis], [Slice Through Reality]
+*Weapon Skills:* [Division Eternal], [Echoing Blade], [Excision Extremis], [Slice Through Reality]
+</div>
 
 ---
 
-### 10% - 0% - Final Phase
+### Split Phases
 
-At the beginning of this phase, Vloxx will lose his external golem armor and transition into his final form. He will then cast [Threshold of Eternity], which will kill all players 2 minutes after the beginning of the phase. During this cast, Vloxx will constantly cycle through the same set of skills ad infinitum:
+Each split phase starts with Vloxx teleporting to the center of the arena and gaining <img class='inline defensive'> [Defensive Inspiration](). An enemy champion will them spawn, along with two elites. The type of enemy depends on the phase:
+- 70% - [Cosmic Piercer](#split-phase-enemies) champion and elites.
+- 40% - [Cosmic Bulwark](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) elites.
+- 10% - [Cosmic Sunderer](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) and [Cosmic Bulwark](#split-phase-enemies) elites.
+
+Killing all three enemies unlocks Vloxx's <img class='inline defiance'> [Defiance Bar], allowing the squad to break it and continue into the following phase.
+
+---
+
+### Final Phase
+
+At the beginning of this phase, Vloxx will transition into his final form. He will then cast [Threshold of Eternity], which kills all players 2 minutes after the beginning of the phase. During this cast, Vloxx will constantly cycle through the same set of skills ad infinitum:
 1. [Judgement of Eternity] (Greens)
 2. [Surrounding Curse] (Small AoEs)
 3. [Excision Extremis] (Swords)
 4. [Probability Distribution] (Puddles)
 5. [Raging Storm] (Spears)
 6. [Excision Extremis] (Swords)
+
+This makes for a challenging phase, since incoming damage and mechanical pressure are extremely high up until the boss dies.
 
 <img class=divider>
 
@@ -126,8 +136,9 @@ Additionally, whenever a player gains a stack of <img class='inline ascension'> 
 <img class='inline ascension'> [Ascension] is a player buff that is diametrically opposed to <img class='inline empowered'> [Empowered]. All players will begin the encounter with 10 <img class='inline ascension'> stacks, and will immediately die if they ever reach zero.
 
 Players *lose* <img class='inline ascension'> stacks whenever they fail certain mechanics:
-- [Judgement of Eternity] - if a green fails, each player inside it loses 3 <img class='inline ascension'> stacks.
+- [Judgement of Eternity] - every player inside a green when it fails loses 3 <img class='inline ascension'> stacks.
 - [Ascension's Sacrifice] - if a chain fails, the chained player loses a <img class='inline ascension'> stack.
+- [Slice Through Reality] - every player that is dragged into the teleport area after it spawns loses a <img class='inline ascension'> stack.
 
 Whenever a player loses <img class='inline ascension'> stacks, Vloxx will gain the same number of <img class='inline empowered'> [Empowered].
 
@@ -145,9 +156,9 @@ The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out
 
 ### Judgement of Eternity
 
-Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green will remove two stacks of <img class='inline ascension'> [Ascension] from all players inside its area and <img class='inline float'> [Float] them.
+Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green deals moderate damage, applies <img class='inline burning'> [Burning], <img class='inline chilled'> [Chilled] and <img class='inline float'> [Float], and removes three stacks of <img class='inline ascension'> [Ascension] from all players in its area.
 
-Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!](https://wiki.guildwars2.com/wiki/%22We_Will_Never_Yield!%22) or <img class='inline august-queen'> [Tale of the August Queen](https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen), unlike other similar mechanics.
+Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics.
 
 Greens have a maximum range of 3000 units. The number of greens in this mechanic depends on the number of living players: with less players alive, fewer greens will spawn so that the mechanic is always solvable.
 
@@ -155,9 +166,83 @@ Greens have a maximum range of 3000 units. The number of greens in this mechanic
 
 ### Probability Distribution
 
-Summons large AoEs on the <img class='inline fixate-icon'> [Fixate] and two additional random players. After tracking their targets for five seconds, they will become stationary. Players then have three seconds to leave their area while they fill and turn into stationary pools, which pulse damage, strip boons and inflict <img class='inline cripple'> [Cripple] on anyone in their area.
+Targets the <img class='inline fixate-icon'> [Fixate] and two additional random players with large tracking AoEs. After following their targets for five seconds, they will become stationary and explode three second later, dealing moderate damage and inflicting <img class='inline knockback'> [Knockback] and <img class='inline poison'> [Poison] to any players in the area and turning into stationary pools.
+
+These pools persist for two pulse damage and inflict <img class='inline cripple'> [Cripple].
 
 AoEs can and should be stacked together to save space.
+
+<img class=divider>
+
+## Staff Attacks
+
+These attacks can be used by Vloxx during the first phase or the final phase, and by the [Champion Staff].
+
+|**Mechanic**|**Common Name**|**Brief Description**|
+| [Annihilating Orb] | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
+| [Ascension's Sacrifice] | Chains | Targets players with chains that require a friend. |
+| [Eternal Reflection] | Cone, Barrage | Launches a barrage of exploding projectiles in a cone. |
+| [Surrounding Curse] | Small AoEs | Summons a rain of projectiles on the group. |
+
+---
+
+### Annihilating Orb
+
+Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] player, indicating the direction with a large arrow. The orb inflicts <img class='inline slow'> [Slow], <img class='inline burning'> [Burning] and <img class='inline knockback'> [Knockback] to players in its area. Once it reaches its maximum range, Vloxx teleports to it, unleashing a shockwave that deals significant damage and inflicts <img class='inline knockback'> [Knockback].
+
+After teleporting, Vloxx will maintain an aura for a few seconds that continues to <img class='inline knockback'> [Knockback] and <img class='inline slow'> [Slow] players.
+
+---
+
+### Ascension's Sacrifice
+
+Three players, including the <img class='inline fixate-icon'> [Fixate], will get targeted by chains. These <img class='inline float'> [Float] and push away the chained player, summoning a small green below them that requires two player to solve. Failing to solve a green will <img class='inline float'> [Float] the chained player a second time and remove a stack of <img class='inline ascension'> [Ascension] from them.
+
+Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics.
+
+---
+
+### Eternal Reflection
+
+Launches a barrage of projectiles in a wide cone towards the  <img class='inline fixate-icon'> [Fixate], dealing heavy damage. These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
+
+---
+
+### Surrounding Curse
+
+Summons a rain of small AoEs on the <img class='inline fixate-icon'> [Fixate] that deal light damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness]. This can be out-healed or reflected safely.
+
+<img class=divider>
+
+## Spear Attacks
+
+### Cosmic Charge
+
+### Raging Storm
+
+### Thousand Strikes
+
+### Worldpiercer
+
+<img class=divider>
+
+## Sword Attacks
+
+### Division Eternal
+
+### Echoing Blade
+
+### Excision Extremis
+
+### Slice Through Reality
+
+<img class=divider>
+
+## Special Attacks
+
+### Visions of Eternity
+
+### Threshold of Eternity
 
 <img class=divider>
 
@@ -190,9 +275,7 @@ Spawns at the beginning of the first split phase (70%). Can use the skills: [Cos
 <div class='center adapt-width-30' markdown=block>
 #### Aspect of the Sword
 {: .no_toc}
-
-[No Image Yet]
-
+<img class='center margins' width="70%" src='./sword.webp'>
 Spawns at the beginning of the second split phase (40%). Can use the skills: [Division Eternal], [Excision Extremis].
 </div>
 
@@ -206,7 +289,7 @@ Spawns at the beginning of the second split phase (40%). Can use the skills: [Di
 | **Armor** | 2597 (standard) |
 | **Hitbox** | 100 (small) |
 
-Champion weapons spawn in before their associated split phase. They gain a CC bar at 25% HP. When this bar is broken or when the add is killed, they will spawn in three orbs that when picked up by a player will grant them a stack of <img class='inline ascension'> [Ascension], removing a stack of <img class='inline empowered'> [Empowered] from the Vloxx. These orbs can only be spawned once per add. Once a weapon is killed, it will respawn 40 seconds later.
+Champion weapons spawn in before the main phase associated with their form. Their behaviour mainly consists in attempting to get in range of a player, then casting one of their available skill. They gain a CC bar at 25% HP. When this bar is broken or when the add is killed, they will spawn in three orbs that when picked up by a player will grant them a stack of <img class='inline ascension'> [Ascension], removing a stack of <img class='inline empowered'> [Empowered] from the Vloxx. These orbs can only be spawned once per add. Once a weapon is killed, it will respawn 40 seconds later.
 
 Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 24 seconds after spawning, and at 20 second intervals following.
 
@@ -257,55 +340,6 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 
 <img class=divider>
 
-## Staff Attacks
-
-These attacks can be used by Vloxx during the first phase or the final phase, and by the [Champion Staff].
-
-|**Mechanic**|**Common Name**|**Brief Description**|
-| [Annihilating Orb] | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
-
-### Annihilating Orb
-
-### Ascension's Sacrifice
-
-### Eternal Reflection
-
-### Surrounding Curse
-
-<img class=divider>
-
-## Spear Attacks
-
-### Cosmic Charge
-
-### Raging Storm
-
-### Thousand Strikes
-
-### Worldpiercer
-
-<img class=divider>
-
-## Sword Attacks
-
-### Division Eternal
-
-### Echoing Blade
-
-### Excision Extremis
-
-### Slice Through Reality
-
-<img class=divider>
-
-## Special Attacks
-
-### Visions of Eternity
-
-### Threshold of Eternity
-
-<img class=divider>
-
 [Return to Home](../index.html){: .btn} [Return to Top](#mechanical-reference){: .btn .fixed}
 
 
@@ -335,6 +369,10 @@ These attacks can be used by Vloxx during the first phase or the final phase, an
 <!-- Links to classes and specializations -->
 
 <!-- Links to player skills -->
+[Feedback]: https://wiki.guildwars2.com/wiki/Feedback
+[Corrosive Poison Cloud]: https://wiki.guildwars2.com/wiki/Corrosive_Poison_Cloud
+[We Will Never Yield!]: https://wiki.guildwars2.com/wiki/%22We_Will_Never_Yield!%22
+[Tale of the August Queen]: https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen
 
 <!-- Links to buffs and debuffs -->
 [Invulnerable]: https://wiki.guildwars2.com/wiki/Invulnerability
@@ -342,8 +380,16 @@ These attacks can be used by Vloxx during the first phase or the final phase, an
 [Resolution]: https://wiki.guildwars2.com/wiki/Resolution
 [Protection]: https://wiki.guildwars2.com/wiki/Protection
 [Float]: https://wiki.guildwars2.com/wiki/Float
+[Floats]: https://wiki.guildwars2.com/wiki/Float
 [Downstate]: https://wiki.guildwars2.com/wiki/Downstate
 [Cripple]: https://wiki.guildwars2.com/wiki/Cripple
+[Knockback]: https://wiki.guildwars2.com/wiki/Knockback
+[Slow]: https://wiki.guildwars2.com/wiki/Slow
+[Burning]: https://wiki.guildwars2.com/wiki/Burning
+[Poison]: https://wiki.guildwars2.com/wiki/Poison
+[Chilled]: https://wiki.guildwars2.com/wiki/Chilled
+[Torment]: https://wiki.guildwars2.com/wiki/Torment
+[Weakness]: https://wiki.guildwars2.com/wiki/Weakness
 
 <!-- Links to enemies and enemy skills -->
 [Champion Staff]: #weapons
@@ -352,3 +398,9 @@ These attacks can be used by Vloxx during the first phase or the final phase, an
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
+
+
+<!-- Notes
+Split into three green piles
+
+-->

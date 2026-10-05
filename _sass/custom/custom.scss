@@ -142,6 +142,11 @@ $gold: #e0be00;
   }
 }
 
+.sidebar-background {
+    background-color: $sidebar-color;
+    padding: 10px;
+}
+
 .yellow-text {
     color: $yellow-500;
 }
