@@ -148,7 +148,7 @@ Players will *gain* <img class='inline ascension'> stacks whenever they pick up 
 
 ### <img class='inline fixate'> Fixate
 
-This effect is applied to a random player in Vloxx's cone of vision. If no one is in sight, it will select the closest person instead. This player will gain an <img class='inline fixate-icon'> icon over their head showing the effect, and will become the target for most of Vloxx's skills.
+This effect is applied to a random player in Vloxx's cone of vision. If no one is in sight, it will select the closest person instead. This player will hear an audio cue and gain an <img class='inline fixate-icon'> icon over their head showing the effect. They will then become the primary target for most of Vloxx's skills.
 
 The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out.
 
@@ -168,7 +168,7 @@ Greens have a maximum range of 3000 units. The number of greens in this mechanic
 
 Targets the <img class='inline fixate-icon'> [Fixate] and two additional random players with large tracking AoEs. After following their targets for five seconds, they will become stationary and explode three second later, dealing moderate damage and inflicting <img class='inline knockback'> [Knockback] and <img class='inline poison'> [Poison] to any players in the area and turning into stationary pools.
 
-These pools persist for two pulse damage and inflict <img class='inline cripple'> [Cripple].
+These pools persist for two pulse damage and inflict <img class='inline cripple'> [Crippled].
 
 AoEs can and should be stacked together to save space.
 
@@ -176,7 +176,7 @@ AoEs can and should be stacked together to save space.
 
 ## Staff Attacks
 
-These attacks can be used by Vloxx during the first phase or the final phase, and by the [Champion Staff].
+These attacks can be used by Vloxx during the first phase or the final phase, or by the [Champion Staff].
 
 |**Mechanic**|**Common Name**|**Brief Description**|
 | [Annihilating Orb] | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
@@ -188,7 +188,7 @@ These attacks can be used by Vloxx during the first phase or the final phase, an
 
 ### Annihilating Orb
 
-Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] player, indicating the direction with a large arrow. The orb inflicts <img class='inline slow'> [Slow], <img class='inline burning'> [Burning] and <img class='inline knockback'> [Knockback] to players in its area. Once it reaches its maximum range, Vloxx teleports to it, unleashing a shockwave that deals significant damage and inflicts <img class='inline knockback'> [Knockback].
+Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] player, indicating the direction with a large arrow. The orb inflicts <img class='inline slow'> [Slow], <img class='inline burning'> [Burning] and <img class='inline knockback'> [Knockback] to players in its area. Once it reaches its maximum range of 1500 units, Vloxx teleports to it, unleashing a shockwave that deals damage and inflicts <img class='inline knockback'> [Knockback].
 
 After teleporting, Vloxx will maintain an aura for a few seconds that continues to <img class='inline knockback'> [Knockback] and <img class='inline slow'> [Slow] players.
 
@@ -204,37 +204,108 @@ Players standing in multiple greens will go <img class='inline invuln'> [Downsta
 
 ### Eternal Reflection
 
-Launches a barrage of projectiles in a wide cone towards the  <img class='inline fixate-icon'> [Fixate], dealing heavy damage. These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
+Launches a barrage of projectiles in a wide cone towards the <img class='inline fixate-icon'> [Fixate], dealing heavy damage.
+
+These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
 
 ---
 
 ### Surrounding Curse
 
-Summons a rain of small AoEs on the <img class='inline fixate-icon'> [Fixate] that deal light damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness]. This can be out-healed or reflected safely.
+Summons a rain of small projectiles on the <img class='inline fixate-icon'> [Fixate] that explode, dealing light damage and inflicting <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness].
+
+{: .note}
+While this attack can technically be reflected, it will often overlap with [Eternal Reflection], which makes it dangerous to do so.
 
 <img class=divider>
 
 ## Spear Attacks
 
+These attacks can be used by Vloxx during the second phase or the final phase, or by the [Champion Spear].
+
+|**Mechanic**|**Common Name**|**Brief Description**|
+| [Cosmic Charge] | Charge | Charges in a line, leaving damaging pools on its trail. |
+| [Raging Storm] | Spears | Launches a barrage of spears that <img class='inline knockback'> [Knockback] and leave lingering pools. |
+| [Thousand Strikes] | Cone | Launches a barrage of spear thrusts in a cone. |
+| [Worldpiercer] | Walls, Lines | Six walls divide the arena into six slices. |
+
+---
+
 ### Cosmic Charge
+
+Targets the <img class='inline fixate-icon'> [Fixate] with a large orange arrow. After a brief pause, charges forward for 1500 units, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a trail of lingering puddles. These corrupt boons and inflict <img class='inline cripple'> [Crippled] and <img class='inline burning'> [Burning].
+
+---
 
 ### Raging Storm
 
+Targets the <img class='inline fixate-icon'> [Fixate] with a barrage of 16 spears at 1 second intervals. Each spear explodes in a small AoE on hitting the floor, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a lingering puddle. This puddle deals moderate damage and strips boons.
+
+Spears are projectiles and thus affected by projectile disruption.
+
+---
+
 ### Thousand Strikes
 
+Vloxx attacks with a series of strikes in a cone, dealing heavy damage.
+
+---
+
 ### Worldpiercer
+
+Vloxx summons six red arrows in a star, which fire after a delay, <img class='inline invuln'> [Downstating] any player caught in one and killing any player caught in two.
+
+The arrows then leave behind narrow walls that inflict <img class='inline knockback'> [Knockback] and 10 stacks of <img class='inline burning'> [Burning] on any players that attempt to walk through their area. It is possible to dodge through these, or walk through with <img class='inline stability'> [Stability] while cleansing the conditions.
+
+Walls persist for 30 seconds, and are not removed on changing phase.
 
 <img class=divider>
 
 ## Sword Attacks
 
+These attacks can be used by Vloxx during the third phase or the final phase, or by the [Champion Sword].
+
+|**Mechanic**|**Common Name**|**Brief Description**|
+| [Division Eternal] | Rectangle | Large rectangular damaging AoE. |
+| [Echoing Blade] | Circle | Circular attack that launches rotating sword projectiles. |
+| [Excision Extremis] | Blades, Storm | Large amount of overlapping semicircular AoE damage and boonstrip. |
+| [Slice Through Reality] | Teleport, Suction | Teleport skill that leaves a rift that sucks in players. |
+
+---
+
 ### Division Eternal
+
+Targets the <img class='inline fixate-icon'> [Fixate] with a large rectangular AoE that inflicts high damage, strips boons and applies <img class='inline blind'> [Blinded] and <img class='inline confusion'> [Confusion].
+
+---
 
 ### Echoing Blade
 
+Circular attack composed of several semicircular AoE slices centered around the boss, combined with red rotating sword projectiles. While each slice deals moderate damage, the cumulative damage from multiple hits can quickly become threatening. The sword projectiles apply moderate damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness], and can be deleted using standard projectile disruption.
+
+---
+
 ### Excision Extremis
 
+Large area attack composed of a storm of overlapping, small to medium sized semicircular sword AoE attacks. Each of these deals moderate damage, inflicts <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and strips boons with an internal cooldown of 2 seconds.
+
+#### Excision Extremis Patterns
+{: .no_toc .center}
+
+<div class="row-container">
+<img class="adapt-width bordered" src="./excision/sample-1.webp">
+<img class="adapt-width bordered" src="./excision/sample-2.webp">
+</div>
+
+While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack occurs in multiple instances with several different patterns. The boss will select which pattern to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate].
+
+---
+
 ### Slice Through Reality
+
+Vloxx slices through space, opening up a rift that transports him to a different location, 1500 units in the direction of the <img class='inline fixate-icon'> [Fixate]. Any players inside of Vloxx's hitbox will be transported with him. 
+
+The entrance of the rift sucks in players, while the exit pushes them away. Players sucked into the rift will be transported to Vloxx's new location, get <img class='inline knockdown'> [Knockdown], have three boons corrupted and lose a stack of <img class='inline ascension'> [Ascension]. This does not apply to players that were transported with Vloxx's initial teleportation.
 
 <img class=divider>
 
@@ -289,12 +360,18 @@ Spawns at the beginning of the second split phase (40%). Can use the skills: [Di
 | **Armor** | 2597 (standard) |
 | **Hitbox** | 100 (small) |
 
-Champion weapons spawn in before the main phase associated with their form. Their behaviour mainly consists in attempting to get in range of a player, then casting one of their available skill. They gain a CC bar at 25% HP. When this bar is broken or when the add is killed, they will spawn in three orbs that when picked up by a player will grant them a stack of <img class='inline ascension'> [Ascension], removing a stack of <img class='inline empowered'> [Empowered] from the Vloxx. These orbs can only be spawned once per add. Once a weapon is killed, it will respawn 40 seconds later.
+Champion weapons spawn in before the main phase associated with their form. When killed, they will respawn 40 seconds later. They will always spawn and respawn at the same locations in the arena.
+
+<img class=center width="60%" src='./weapon-spawns.webp'>
+
+Weapon behaviour mainly consists in attempting to get in range of a player, then casting one of their available skills. Both the *Spear* and *Sword* are melee, and will attempt to get into melee range to attack. The *Staff* instead is range, and will stop around 300 units from its target.
 
 Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 24 seconds after spawning, and at 20 second intervals following.
 
 {: .note}
-This means that weapons should be killed at most 84 seconds after spawning to be neutral on <img class='inline empowered'> [Empowered]. The <img class='inline achievement'> [True Visionary](https://wiki.guildwars2.com/wiki/The_Nexus_of_Eternity) achievement, which involves ending on less than 10 stacks, requires killing seven champions in less than 24 seconds, or 11 champions in less than 44 seconds, or 21 champions in less than 64 seconds.
+This means that weapons should be killed at most 84 seconds after spawning to remain neutral on <img class='inline empowered'> [Empowered]. The <img class='inline achievement'> [True Visionary](https://wiki.guildwars2.com/wiki/The_Nexus_of_Eternity) achievement, which involves ending on less than 10 stacks, requires killing seven champions in less than 24 seconds, or 11 champions in less than 44 seconds, or 21 champions in less than 64 seconds.
+
+Weapons gain a CC bar at 25% HP. When this bar is broken, they will spawn in three orbs that grant a stack of <img class='inline ascension'> [Ascension] when picked up by a player, removing a stack of <img class='inline empowered'> [Empowered] from Vloxx. These orbs can only be spawned once per add.
 
 
 ---
@@ -309,7 +386,7 @@ There are three elemental types: the *Cosmic Piercer*, the *Cosmic Bulwark* and 
 #### Cosmic Piercer
 {: .no_toc}
 <img class='center margins' width="70%" src='./piercer.webp'>
-Spawns during the 70% split phase. Summons waves of projectiles and teleports.
+Spawns during the 70% split phase. Summons projectile waves and teleports.
 </div>
 
 <div class='center adapt-width-30' markdown=block>
@@ -336,7 +413,7 @@ Spawns during the 10% split phase. He looks cool for a bit, I guess.
 | **Armor** | 2597 (standard) |
 | **Hitbox** | 100 (small) |
 
-A champion and three Elite versions of are spawned at the beginning of each split phase as a part of the cast of [Visions of Eternity]. Killing these adds is necessary to unlock Vloxx's <img class='inline defiance'> [Defiance Bar] and progress the encounter.
+A champion and three Elite versions of these enemies are spawned at the beginning of each split phase as a part of the cast of [Visions of Eternity]. Killing these adds is necessary to unlock Vloxx's <img class='inline defiance'> [Defiance Bar] and progress the encounter.
 
 <img class=divider>
 
@@ -375,21 +452,27 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 [Tale of the August Queen]: https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen
 
 <!-- Links to buffs and debuffs -->
+[Downstating]: https://wiki.guildwars2.com/wiki/Downstate
 [Invulnerable]: https://wiki.guildwars2.com/wiki/Invulnerability
 [Might]: https://wiki.guildwars2.com/wiki/Might
 [Resolution]: https://wiki.guildwars2.com/wiki/Resolution
 [Protection]: https://wiki.guildwars2.com/wiki/Protection
+[Stability]: ttps://wiki.guildwars2.com/wiki/Stability
 [Float]: https://wiki.guildwars2.com/wiki/Float
 [Floats]: https://wiki.guildwars2.com/wiki/Float
 [Downstate]: https://wiki.guildwars2.com/wiki/Downstate
-[Cripple]: https://wiki.guildwars2.com/wiki/Cripple
+[Crippled]: https://wiki.guildwars2.com/wiki/Cripple
 [Knockback]: https://wiki.guildwars2.com/wiki/Knockback
+[Knockdown]: https://wiki.guildwars2.com/wiki/Knockdown
 [Slow]: https://wiki.guildwars2.com/wiki/Slow
 [Burning]: https://wiki.guildwars2.com/wiki/Burning
 [Poison]: https://wiki.guildwars2.com/wiki/Poison
 [Chilled]: https://wiki.guildwars2.com/wiki/Chilled
 [Torment]: https://wiki.guildwars2.com/wiki/Torment
 [Weakness]: https://wiki.guildwars2.com/wiki/Weakness
+[Blinded]: https://wiki.guildwars2.com/wiki/Blinded
+[Confusion]: https://wiki.guildwars2.com/wiki/Confusion
+[Bleeding]: https://wiki.guildwars2.com/wiki/Bleeding
 
 <!-- Links to enemies and enemy skills -->
 [Champion Staff]: #weapons
@@ -398,9 +481,3 @@ A champion and three Elite versions of are spawned at the beginning of each spli
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
-
-
-<!-- Notes
-Split into three green piles
-
--->
