@@ -4,7 +4,8 @@ layout: page
 nav_order: 100
 ---
 
-Stina: drawing
-gw2 wiki icons information
-leykeep builds and information
-mike pov?
+- Stina: drawing
+- gw2 wiki icons information
+- leykeep builds and information
+- mike pov
+- elite insights boss images

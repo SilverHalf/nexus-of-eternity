@@ -311,9 +311,39 @@ The entrance of the rift sucks in players, while the exit pushes them away. Play
 
 ## Special Attacks
 
+While technically single attacks, these mechanics are more like sequences of consecutive attacks that only appear in specific moments of the fight.
+
+---
+
 ### Visions of Eternity
 
+This attack is cast upon reaching *70%*, *%40%* and *10%* of Vloxx's maximum HP, triggering the beginning of his split phases. Vloxx will become <img class='inline invuln'> [Invulnerable] and start charging up a massive strike. While doing so, he will summon a [Champion Elemental] and three [Elite Elementals], with the composition of enemies depending on the specific split phase.
+
+He will then start casting large AoEs targeting the group. These slowly fill, dealing moderate damage and applying <img class='inline float'> [Float] to players caught inside.
+
+This attack can be interrupted by killing all the summoned elementals, which will unlock Vloxx's <img class='inline defiance'> [Defiance Bar]. Breaking this bar will stop the attack, grant Vloxx 10 <img class='inline empowered'> [Empowered], and begin the following phase.
+
+If the attack is allowed to complete, 67 seconds after Vloxx becomes invulnerable, it will instantly defeat all players.
+
+---
+
 ### Threshold of Eternity
+
+This attack is used by Vloxx at the beginning of the 10% phase. He commences it by becoming <img class='inline invuln'> [Invulnerable] while changing to his smaller meditation form over the course of 15 seconds, upon which he becomes vulnerable once more.
+
+While this transformation is ongoing, he will start casting a combination of attacks from all three phases.
+
+#### Attacks Included
+{: .no_toc .center}
+
+|**General Attacks**| [Judgement of Eternity], [Probability Distribution] |
+|**Staff Attacks**| [Surrounding Curse] |
+|**Spear Attacks**| [Raging Storm] |
+|**Sword Attacks**| [Excision Extremis] |
+
+These mechanics rotate continuously until the boss is dead.
+
+Beginning this attack will also start a timer, which overrides the enrage for the fight and shortens it to two minutes. If this timer runs out, Vloxx will instantly defeat all players.
 
 <img class=divider>
 
@@ -325,7 +355,7 @@ The Nexus of Eternity encounter is characterized by a large amount of enemy adds
 
 ### Weapons
 
-These are three Champion Weapons, one for each of Vloxx's weapons:
+These are three Champion Weapons, one for each of Vloxx's armaments:
 
 <div class="alt-row-container">
 
@@ -364,7 +394,7 @@ Champion weapons spawn in before the main phase associated with their form. When
 
 <img class=center width="60%" src='./weapon-spawns.webp'>
 
-Weapon behaviour mainly consists in attempting to get in range of a player, then casting one of their available skills. Both the *Spear* and *Sword* are melee, and will attempt to get into melee range to attack. The *Staff* instead is range, and will stop around 300 units from its target.
+Weapon behaviour mainly consists in attempting to get in range of a player, then casting one of their available skills. Both the *Spear* and *Sword* are melee, and will attempt to get into melee range to attack. The *Staff* instead is ranged, and will stop at around 300 units from its target.
 
 Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 24 seconds after spawning, and at 20 second intervals following.
 
@@ -478,6 +508,8 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 [Champion Staff]: #weapons
 [Champion Spear]: #weapons
 [Champion Sword]: #weapons
+[Champion Elemental]: #elementals
+[Elite Elementals]: #elementals
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
