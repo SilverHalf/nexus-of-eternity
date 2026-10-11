@@ -145,6 +145,8 @@ $gold: #e0be00;
 .sidebar-background {
     background-color: $sidebar-color;
     padding: 10px;
+    border: 1px solid $sidebar-color;
+    border-radius: 15px;
 }
 
 .yellow-text {

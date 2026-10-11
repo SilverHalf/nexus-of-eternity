@@ -156,15 +156,39 @@ The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out
 
 ### Judgement of Eternity
 
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/judgement-of-eternity.mp4' type='video/mp4'>
+</video>
+</div>
+
 Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green deals moderate damage, applies <img class='inline burning'> [Burning], <img class='inline chilled'> [Chilled] and <img class='inline float'> [Float], and removes three stacks of <img class='inline ascension'> [Ascension] from all players in its area.
 
 Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics.
 
 Greens have a maximum range of 3000 units. The number of greens in this mechanic depends on the number of living players: with less players alive, fewer greens will spawn so that the mechanic is always solvable.
+<!-- 
+#### Strategy
+{: .no_toc}
+It is customary to choose two players to act as *green baiters*. These are usually melee DPS or boonDPS, and their job is to stay inside the boss's hitbox in order to get targeted by this mechanic.
+
+The squad can be divided then into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. These *anchors* are usually the two *green baiters* for the side groups, and the <img class='inline tag'> tag for the middle group. The tenth person has a special role, and is usually called the *joker* or the *fill*. 
+
+<img class='center' width='80%' src='./green-groups.svg'>
+
+When solving greens, all three groups will position referenced to the tag, with each anchor
+
+The main variation depends on who is selected as the <img class='inline fixate-icon'> [Fixate]. If they are from the middle group, the formation doe -->
 
 ---
 
 ### Probability Distribution
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/probability-distribution.mp4' type='video/mp4'>
+</video>
+</div>
 
 Targets the <img class='inline fixate-icon'> [Fixate] and two additional random players with large tracking AoEs. After following their targets for five seconds, they will become stationary and explode three second later, dealing moderate damage and inflicting <img class='inline knockback'> [Knockback] and <img class='inline poison'> [Poison] to any players in the area and turning into stationary pools.
 
@@ -188,6 +212,12 @@ These attacks can be used by Vloxx during the first phase or the final phase, or
 
 ### Annihilating Orb
 
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/annihilating-orb.mp4' type='video/mp4'>
+</video>
+</div>
+
 Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] player, indicating the direction with a large arrow. The orb inflicts <img class='inline slow'> [Slow], <img class='inline burning'> [Burning] and <img class='inline knockback'> [Knockback] to players in its area. Once it reaches its maximum range of 1500 units, Vloxx teleports to it, unleashing a shockwave that deals damage and inflicts <img class='inline knockback'> [Knockback].
 
 After teleporting, Vloxx will maintain an aura for a few seconds that continues to <img class='inline knockback'> [Knockback] and <img class='inline slow'> [Slow] players.
@@ -195,6 +225,12 @@ After teleporting, Vloxx will maintain an aura for a few seconds that continues 
 ---
 
 ### Ascension's Sacrifice
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/ascensions-sacrifice.mp4' type='video/mp4'>
+</video>
+</div>
 
 Three players, including the <img class='inline fixate-icon'> [Fixate], will get targeted by chains. These <img class='inline float'> [Float] and push away the chained player, summoning a small green below them that requires two player to solve. Failing to solve a green will <img class='inline float'> [Float] the chained player a second time and remove a stack of <img class='inline ascension'> [Ascension] from them.
 
@@ -204,6 +240,12 @@ Players standing in multiple greens will go <img class='inline invuln'> [Downsta
 
 ### Eternal Reflection
 
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/eternal-reflection.mp4' type='video/mp4'>
+</video>
+</div>
+
 Launches a barrage of projectiles in a wide cone towards the <img class='inline fixate-icon'> [Fixate], dealing heavy damage.
 
 These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
@@ -211,6 +253,12 @@ These projectiles bounce and explode whenever they interact with projectile dest
 ---
 
 ### Surrounding Curse
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/surrounding-curse.mp4' type='video/mp4'>
+</video>
+</div>
 
 Summons a rain of small projectiles on the <img class='inline fixate-icon'> [Fixate] that explode, dealing light damage and inflicting <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness].
 
@@ -233,11 +281,23 @@ These attacks can be used by Vloxx during the second phase or the final phase, o
 
 ### Cosmic Charge
 
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/cosmic-charge.mp4' type='video/mp4'>
+</video>
+</div>
+
 Targets the <img class='inline fixate-icon'> [Fixate] with a large orange arrow. After a brief pause, charges forward for 1500 units, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a trail of lingering puddles. These corrupt boons and inflict <img class='inline cripple'> [Crippled] and <img class='inline burning'> [Burning].
 
 ---
 
 ### Raging Storm
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/raging storm.mp4' type='video/mp4'>
+</video>
+</div>
 
 Targets the <img class='inline fixate-icon'> [Fixate] with a barrage of 16 spears at 1 second intervals. Each spear explodes in a small AoE on hitting the floor, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a lingering puddle. This puddle deals moderate damage and strips boons.
 
@@ -247,11 +307,23 @@ Spears are projectiles and thus affected by projectile disruption.
 
 ### Thousand Strikes
 
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/thousand-strikes.mp4' type='video/mp4'>
+</video>
+</div>
+
 Vloxx attacks with a series of strikes in a cone, dealing heavy damage.
 
 ---
 
 ### Worldpiercer
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/worldpiercer.mp4' type='video/mp4'>
+</video>
+</div>
 
 Vloxx summons six red arrows in a star, which fire after a delay, <img class='inline invuln'> [Downstating] any player caught in one and killing any player caught in two.
 
@@ -275,17 +347,37 @@ These attacks can be used by Vloxx during the third phase or the final phase, or
 
 ### Division Eternal
 
-Targets the <img class='inline fixate-icon'> [Fixate] with a large rectangular AoE that inflicts high damage, strips boons and applies <img class='inline blind'> [Blinded] and <img class='inline confusion'> [Confusion].
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/division-eternal.mp4' type='video/mp4'>
+</video>
+</div>
+
+Throws a massive sword at the <img class='inline fixate-icon'> [Fixate], resulting in a large rectangular AoE that inflicts high damage, strips boons and applies <img class='inline blind'> [Blinded] and <img class='inline confusion'> [Confusion].
+
+This skill deals damage multiple times over its length: players that are too far from the boss can get hit multiple times, resulting in increased damage.
 
 ---
 
 ### Echoing Blade
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/echoing-blade.mp4' type='video/mp4'>
+</video>
+</div>
 
 Circular attack composed of several semicircular AoE slices centered around the boss, combined with red rotating sword projectiles. While each slice deals moderate damage, the cumulative damage from multiple hits can quickly become threatening. The sword projectiles apply moderate damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness], and can be deleted using standard projectile disruption.
 
 ---
 
 ### Excision Extremis
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/excision-extremis.mp4' type='video/mp4'>
+</video>
+</div>
 
 Large area attack composed of a storm of overlapping, small to medium sized semicircular sword AoE attacks. Each of these deals moderate damage, inflicts <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and strips boons with an internal cooldown of 2 seconds.
 
@@ -302,6 +394,12 @@ While individual AoEs are not dangerous, the cumulative damage from multiple hit
 ---
 
 ### Slice Through Reality
+
+<div class='sidebar-background'>
+<video class='bordered center' width="70%" controls>
+<source src='../videos/slice-through-reality.mp4' type='video/mp4'>
+</video>
+</div>
 
 Vloxx slices through space, opening up a rift that transports him to a different location, 1500 units in the direction of the <img class='inline fixate-icon'> [Fixate]. Any players inside of Vloxx's hitbox will be transported with him. 
 
@@ -394,7 +492,7 @@ Champion weapons spawn in before the main phase associated with their form. When
 
 <img class=center width="60%" src='./weapon-spawns.webp'>
 
-Weapon behaviour mainly consists in attempting to get in range of a player, then casting one of their available skills. Both the *Spear* and *Sword* are melee, and will attempt to get into melee range to attack. The *Staff* instead is ranged, and will stop at around 300 units from its target.
+Weapon behaviour mainly consists in attempting to get in range of a player, then casting one of their available skills. Both the *Spear* and *Sword* are melee, and will attempt to get into melee range to attack. The *Staff* instead is ranged, and will stop at around 300 units from its target. Weapons will remain active as long as they are alive, continuously harassing the group through the entirety of the split phases and transitions up until the fight end.
 
 Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 24 seconds after spawning, and at 20 second intervals following.
 
@@ -402,7 +500,6 @@ Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 2
 This means that weapons should be killed at most 84 seconds after spawning to remain neutral on <img class='inline empowered'> [Empowered]. The <img class='inline achievement'> [True Visionary](https://wiki.guildwars2.com/wiki/The_Nexus_of_Eternity) achievement, which involves ending on less than 10 stacks, requires killing seven champions in less than 24 seconds, or 11 champions in less than 44 seconds, or 21 champions in less than 64 seconds.
 
 Weapons gain a CC bar at 25% HP. When this bar is broken, they will spawn in three orbs that grant a stack of <img class='inline ascension'> [Ascension] when picked up by a player, removing a stack of <img class='inline empowered'> [Empowered] from Vloxx. These orbs can only be spawned once per add.
-
 
 ---
 
