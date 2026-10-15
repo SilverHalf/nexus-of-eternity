@@ -4,9 +4,9 @@ title: Mechanics
 nav_order: 2
 ---
 
-[Return to Home](../index.html){: .btn}
+[Return to Home](../index.html){: .btn} [Strategy Guide](../strategy/index.html){: .btn}
 
-# Mechanical Reference
+# Vloxx
 {: .no_toc .center}
 
 <img class='bordered' src='../images/vloxx.webp'>
@@ -24,8 +24,6 @@ This page contains a detailed reference of the various attacks and mechanics pre
 <div markdown=block>
 1. TOC
 {:toc}
-
----
 </div>
 </details>
 
@@ -49,7 +47,7 @@ While this is similar in concept to bosses such as [Greer](https://silverhalf.gi
 
 <div class="sidebar-background" markdown=block>
 #### 100% - 70% - Staff Phase
-
+{: .no_toc}
 Vloxx's staff is modeled after [Ancora Pax](https://wiki.guildwars2.com/wiki/Ancora_Pax). This phase is characterized by a large amount of projectiles: reflecting or blocking these can be potentially dangerous since some will bounce off, resulting in several potentially dangerous AoEs.
 
 *Weapon Skills:* [Annihilating Orb], [Ascension's Sacrifice], [Eternal Reflection], [Surrounding Curse]
@@ -57,7 +55,7 @@ Vloxx's staff is modeled after [Ancora Pax](https://wiki.guildwars2.com/wiki/Anc
 
 <div style="padding:10px" markdown=block>
 #### 70% - 40% - Spear Phase
-
+{: .no_toc}
 Vloxx's spear is modeled after [Ancora Bellum](https://wiki.guildwars2.com/wiki/Ancora_Bellum). This phase is mostly characterized by [Worldpiercer] heavily limiting squad movement while [Raging Storm] requires either permanent projectile block or constant repositioning.
 
 *Weapon Skills:* [Cosmic Charge], [Raging Storm], [Thousand Strikes], [Worldpiercer]
@@ -65,7 +63,7 @@ Vloxx's spear is modeled after [Ancora Bellum](https://wiki.guildwars2.com/wiki/
 
 <div class="sidebar-background" markdown=block>
 #### 40% - 10% - Sword Phase
-
+{: .no_toc}
 Vloxx's sword is modeled after [Wages of Stars](https://wiki.guildwars2.com/wiki/Wages_of_Stars). This phase is characterized by a large amount of AoE Damage, especially from [Echoing Blade] and [Excision Extremis]. This requires a lot of attention from the group to either out-heal or avoid most of the danger.
 
 *Weapon Skills:* [Division Eternal], [Echoing Blade], [Excision Extremis], [Slice Through Reality]
@@ -690,7 +688,7 @@ Weapons will grant Vloxx a stack of <img class='inline empowered'> [Empowered] 2
 {: .note}
 This means that weapons should be killed at most 84 seconds after spawning to remain neutral on <img class='inline empowered'> [Empowered]. The <img class='inline achievement'> [True Visionary](https://wiki.guildwars2.com/wiki/The_Nexus_of_Eternity) achievement, which involves ending on less than 10 stacks, requires killing seven champions in less than 24 seconds, or 11 champions in less than 44 seconds, or 21 champions in less than 64 seconds.
 
-Weapons gain a CC bar at 25% HP. When this bar is broken, they will spawn in three orbs that grant a stack of <img class='inline ascension'> [Ascension] when picked up by a player, removing a stack of <img class='inline empowered'> [Empowered] from Vloxx. These orbs can only be spawned once per add.
+Weapons gain a CC bar at 25% HP. When this bar is broken, they will spawn in three orbs that grant a stack of <img class='inline ascension'> [Ascension] when picked up by a player, removing a stack of <img class='inline empowered'> [Empowered] from Vloxx. These orbs can only be spawned once per add, and persist for 2 minutes before de-spawning.
 
 ---
 
@@ -735,7 +733,7 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 
 <img class=divider>
 
-[Return to Home](../index.html){: .btn} [Return to Top](#mechanical-reference){: .btn .fixed}
+[Return to Home](../index.html){: .btn} [Strategy Guide](../strategy/index.html){: .btn} [Return to Top](#vloxx){: .btn .fixed}
 
 
 <!-- Links to other pages in the guide -->
