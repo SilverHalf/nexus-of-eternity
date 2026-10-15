@@ -11,7 +11,7 @@ nav_order: 2
 
 <img class='bordered' src='../images/vloxx.webp'>
 
-| **Health** |  84,939,840  |
+| **Health** |  84'939'840 (CM), 102'777'208 (LM) |
 | **Defiance Bar** | 6000 |
 | **Armor** | 2597 (standard) |
 | **Hitbox** | 180 (medium) |
@@ -39,13 +39,13 @@ The battle against Vloxx is divided into three main phases, three split phases a
 
 ### Main Phases
 
-Vloxx's main phases are styled around his three weapons: *Staff*, *Spear* and *Sword*. Each main phase is mostly limited to a set of mechanics specific to the phase's weapon, plus a few attacks that are present in all three.
+Vloxx's main phases are styled around his three weapons: *Staff*, *Spear* and *Sword*. Each one is mostly limited to a set of mechanics specific to the phase's weapon, plus a few attacks that are present in all three.
 
 Vloxx's behaviour in the main phases is based on a priority-cooldown system:
 - All active mechanics have their own *cooldown* and *priority*.
 - The boss will always cast the highest priority skill that is off-cooldown.
 
-While this is similar in concept to bosses such as [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html) and [Ura](https://silverhalf.github.io/mount-balrior/ura/overview.html), in practice Vloxx's relatively short cooldowns and absence of skill interruptions means the boss will usually present the same order of mechanics consistently for each phase.
+While this is similar in concept to bosses such as [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html) and [Ura](https://silverhalf.github.io/mount-balrior/ura/overview.html), in practice Vloxx's relatively short cooldowns and absence of skill interruptions means the boss will usually present the same order of mechanics consistently for each phase. Exceptions to this standard order occur in high DPS situations, where skills do not have the time to come off-cooldown after split phases.
 
 <div class="sidebar-background" markdown=block>
 #### 100% - 70% - Staff Phase
@@ -79,6 +79,9 @@ Each split phase starts with Vloxx teleporting to the center of the arena and ga
 - 70% - [Cosmic Piercer](#split-phase-enemies) champion and elites.
 - 40% - [Cosmic Bulwark](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) elites.
 - 10% - [Cosmic Sunderer](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) and [Cosmic Bulwark](#split-phase-enemies) elites.
+
+{: .legendary}
+All enemies summoned in split phases will be Champion versions instead.
 
 Killing all three enemies unlocks Vloxx's <img class='inline defiance'> [Defiance Bar], allowing the squad to break it and continue into the following phase.
 
@@ -156,10 +159,23 @@ The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out
 
 ### Judgement of Eternity
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/judgement-of-eternity.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Greens |
+|*Used By*| Vloxx |
+|*Used in Phases*| All |
+|*Cooldown*| 40 seconds |
+
+</div>
+
 </div>
 
 Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green deals moderate damage, applies <img class='inline burning'> [Burning], <img class='inline chilled'> [Chilled] and <img class='inline float'> [Float], and removes three stacks of <img class='inline ascension'> [Ascension] from all players in its area.
@@ -184,10 +200,23 @@ The main variation depends on who is selected as the <img class='inline fixate-i
 
 ### Probability Distribution
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/probability-distribution.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Large AoEs, Puddles |
+|*Used By*| Vloxx |
+|*Used in Phases*| All |
+|*Cooldown*| 30 seconds |
+
+</div>
+
 </div>
 
 Targets the <img class='inline fixate-icon'> [Fixate] and two additional random players with large tracking AoEs. After following their targets for five seconds, they will become stationary and explode three second later, dealing moderate damage and inflicting <img class='inline knockback'> [Knockback] and <img class='inline poison'> [Poison] to any players in the area and turning into stationary pools.
@@ -212,10 +241,23 @@ These attacks can be used by Vloxx during the first phase or the final phase, or
 
 ### Annihilating Orb
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/annihilating-orb.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Orb, Port |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 1] |
+|*Cooldown*| 30 seconds |
+
+</div>
+
 </div>
 
 Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] player, indicating the direction with a large arrow. The orb inflicts <img class='inline slow'> [Slow], <img class='inline burning'> [Burning] and <img class='inline knockback'> [Knockback] to players in its area. Once it reaches its maximum range of 1500 units, Vloxx teleports to it, unleashing a shockwave that deals damage and inflicts <img class='inline knockback'> [Knockback].
@@ -226,10 +268,23 @@ After teleporting, Vloxx will maintain an aura for a few seconds that continues 
 
 ### Ascension's Sacrifice
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/ascensions-sacrifice.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Stunbreak, Greens, Chains |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 1] |
+|*Cooldown*| est. 45 seconds |
+
+</div>
+
 </div>
 
 Three players, including the <img class='inline fixate-icon'> [Fixate], will get targeted by chains. These <img class='inline float'> [Float] and push away the chained player, summoning a small green below them that requires two player to solve. Failing to solve a green will <img class='inline float'> [Float] the chained player a second time and remove a stack of <img class='inline ascension'> [Ascension] from them.
@@ -240,13 +295,26 @@ Players standing in multiple greens will go <img class='inline invuln'> [Downsta
 
 ### Eternal Reflection
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/eternal-reflection.mp4' type='video/mp4'>
 </video>
 </div>
 
-Launches a barrage of projectiles in a wide cone towards the <img class='inline fixate-icon'> [Fixate], dealing heavy damage.
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Fan, Cone, "Who is reflecting?!" |
+|*Used By*| Vloxx, [Champion Staff] |
+|*Used in Phases*| [Phase 1] |
+|*Cooldown*| est. 9 seconds |
+
+</div>
+
+</div>
+
+Launches a barrage of projectiles in a wide cone towards the <img class='inline fixate-icon'> [Fixate], dealing moderate damage.
 
 These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
 
@@ -254,10 +322,23 @@ These projectiles bounce and explode whenever they interact with projectile dest
 
 ### Surrounding Curse
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/surrounding-curse.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Rain, Small AoES |
+|*Used By*| Vloxx, [Champion Staff] |
+|*Used in Phases*| [Phase 1], [Phase 4] |
+|*Cooldown*| est. 30 seconds |
+
+</div>
+
 </div>
 
 Summons a rain of small projectiles on the <img class='inline fixate-icon'> [Fixate] that explode, dealing light damage and inflicting <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness].
@@ -281,10 +362,23 @@ These attacks can be used by Vloxx during the second phase or the final phase, o
 
 ### Cosmic Charge
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/cosmic-charge.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Charge, Dash |
+|*Used By*| Vloxx, [Champion Spear] |
+|*Used in Phases*| [Phase 2] |
+|*Cooldown*| 45 seconds |
+
+</div>
+
 </div>
 
 Targets the <img class='inline fixate-icon'> [Fixate] with a large orange arrow. After a brief pause, charges forward for 1500 units, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a trail of lingering puddles. These corrupt boons and inflict <img class='inline cripple'> [Crippled] and <img class='inline burning'> [Burning].
@@ -293,43 +387,85 @@ Targets the <img class='inline fixate-icon'> [Fixate] with a large orange arrow.
 
 ### Raging Storm
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/raging storm.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Spears, Reflect |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 2], [Phase 4] |
+|*Cooldown*| 36 seconds |
+
+</div>
+
 </div>
 
 Targets the <img class='inline fixate-icon'> [Fixate] with a barrage of 16 spears at 1 second intervals. Each spear explodes in a small AoE on hitting the floor, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a lingering puddle. This puddle deals moderate damage and strips boons.
 
 Spears are projectiles and thus affected by projectile disruption.
 
+{: .legendary}
+Spears are no longer affected by projectile disruption during the final phase.
+
 ---
 
 ### Thousand Strikes
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/thousand-strikes.mp4' type='video/mp4'>
 </video>
 </div>
 
-Vloxx attacks with a series of strikes in a cone, dealing heavy damage.
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Cone, Thrusts |
+|*Used By*| Vloxx, [Champion Spear] |
+|*Used in Phases*| [Phase 2] |
+|*Cooldown*| est. 8 seconds |
+
+</div>
+
+</div>
+
+Vloxx attacks with a rapid series of strikes in a cone, dealing heavy damage.
 
 ---
 
 ### Worldpiercer
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/worldpiercer.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Walls, Pizza |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 2] |
+|*Cooldown*| 30 seconds |
+
+</div>
+
 </div>
 
 Vloxx summons six red arrows in a star, which fire after a delay, <img class='inline invuln'> [Downstating] any player caught in one and killing any player caught in two.
 
 The arrows then leave behind narrow walls that inflict <img class='inline knockback'> [Knockback] and 10 stacks of <img class='inline burning'> [Burning] on any players that attempt to walk through their area. It is possible to dodge through these, or walk through with <img class='inline stability'> [Stability] while cleansing the conditions.
 
-Walls persist for 30 seconds, and are not removed on changing phase.
+Walls persist for 15 seconds, and are not removed on phase changes.
 
 <img class=divider>
 
@@ -347,10 +483,23 @@ These attacks can be used by Vloxx during the third phase or the final phase, or
 
 ### Division Eternal
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/division-eternal.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Rectangle |
+|*Used By*| Vloxx, [Champion Sword] |
+|*Used in Phases*| [Phase 3] |
+|*Cooldown*| 5 seconds |
+
+</div>
+
 </div>
 
 Throws a massive sword at the <img class='inline fixate-icon'> [Fixate], resulting in a large rectangular AoE that inflicts high damage, strips boons and applies <img class='inline blind'> [Blinded] and <img class='inline confusion'> [Confusion].
@@ -361,25 +510,54 @@ This skill deals damage multiple times over its length: players that are too far
 
 ### Echoing Blade
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/echoing-blade.mp4' type='video/mp4'>
 </video>
 </div>
 
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Circle, Red Swords |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 3] |
+|*Cooldown*| 20 seconds |
+
+</div>
+
+</div>
+
 Circular attack composed of several semicircular AoE slices centered around the boss, combined with red rotating sword projectiles. While each slice deals moderate damage, the cumulative damage from multiple hits can quickly become threatening. The sword projectiles apply moderate damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness], and can be deleted using standard projectile disruption.
+
+{: .legendary}
+The projectiles from this attack are larger and ignore projectile disruption.
 
 ---
 
 ### Excision Extremis
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/excision-extremis.mp4' type='video/mp4'>
 </video>
 </div>
 
-Large area attack composed of a storm of overlapping, small to medium sized semicircular sword AoE attacks. Each of these deals moderate damage, inflicts <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and strips boons with an internal cooldown of 2 seconds.
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Geometry, Bladestorm |
+|*Used By*| Vloxx, [Champion Sword] |
+|*Used in Phases*| [Phase 3], [Phase 4] |
+|*Cooldown*| 10 seconds |
+
+</div>
+
+</div>
+
+Large area attack consisting of a storm of overlapping, small to medium semicircular AoE attacks. Each of these deals moderate damage, inflicts <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and strips boons with an internal cooldown of 2 seconds.
 
 #### Excision Extremis Patterns
 {: .no_toc .center}
@@ -389,16 +567,29 @@ Large area attack composed of a storm of overlapping, small to medium sized semi
 <img class="adapt-width bordered" src="./excision/sample-2.webp">
 </div>
 
-While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack occurs in multiple instances with several different patterns. The boss will select which pattern to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate].
+While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack can occur with several different patterns; the boss will select which one to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate]. Patterns tend to leave "safe areas" behind the boss, especially when the <img class='inline fixate-icon'> [Fixate] is in melee range.
 
 ---
 
 ### Slice Through Reality
 
-<div class='sidebar-background'>
-<video class='bordered center' width="70%" controls>
+<div class='sidebar-background row-container margins'>
+
+<div class='adapt-width'>
+<video class='bordered center' width="100%" controls>
 <source src='../videos/slice-through-reality.mp4' type='video/mp4'>
 </video>
+</div>
+
+<div class='adapt-width' markdown=block>
+
+|*Common Name*| Teleport, Suck |
+|*Used By*| Vloxx |
+|*Used in Phases*| [Phase 3] |
+|*Cooldown*| 60 seconds |
+
+</div>
+
 </div>
 
 Vloxx slices through space, opening up a rift that transports him to a different location, 1500 units in the direction of the <img class='inline fixate-icon'> [Fixate]. Any players inside of Vloxx's hitbox will be transported with him. 
@@ -569,6 +760,11 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 [Empowered]: #-empowered
 [Fixate]: #-fixate
 [Fixated]: #-fixate
+
+[Phase 1]: #staff-phase
+[Phase 2]: #spear-phase
+[Phase 3]: #sword-phase
+[Phase 4]: #final-phase
 
 <!-- Links to classes and specializations -->
 
