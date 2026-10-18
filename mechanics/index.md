@@ -178,21 +178,31 @@ The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out
 
 Targets the <img class='inline fixate-icon'> [Fixated] player and the two closest non-fixated players with a green, requiring three people inside. Failing to solve a green deals moderate damage, applies <img class='inline burning'> [Burning], <img class='inline chilled'> [Chilled] and <img class='inline float'> [Float], and removes three stacks of <img class='inline ascension'> [Ascension] from all players in its area.
 
-Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics.
+Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics. Additionally, they are not counted as being inside either green, possibly leading them to fail.
 
 Greens have a maximum range of 3000 units. The number of greens in this mechanic depends on the number of living players: with less players alive, fewer greens will spawn so that the mechanic is always solvable.
-<!-- 
+
 #### Strategy
 {: .no_toc}
 It is customary to choose two players to act as *green baiters*. These are usually melee DPS or boonDPS, and their job is to stay inside the boss's hitbox in order to get targeted by this mechanic.
 
-The squad can be divided then into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. These *anchors* are usually the two *green baiters* for the side groups, and the <img class='inline tag'> tag for the middle group. The tenth person has a special role, and is usually called the *joker* or the *fill*. 
+The squad can be divided then into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. These *anchors* are usually the two *green baiters* for the side groups, and the <img class='inline tag'> tag for the middle group. The tenth person has a special role, and is usually called the *joker* or the *float*. 
 
-<img class='center' width='80%' src='./green-groups.svg'>
+<img class='center' width='80%' src='./greens/green-strategy.webp'>
 
-When solving greens, all three groups will position referenced to the tag, with each anchor
+When solving greens, all three groups will position referenced to the tag, with each anchor taking a side. Improvisation depends on who is selected as the <img class='inline fixate-icon'> [Fixate], as this is always selected randomly. Ideally the fixate should always be in the center, as this makes it easier to bait out mechanics in a determined direction.
 
-The main variation depends on who is selected as the <img class='inline fixate-icon'> [Fixate]. If they are from the middle group, the formation doe -->
+The easiest situation is when the <img class='inline fixate-icon'> [Fixate] is selected from the middle group. In this case, no additional adjustments are necessary and players can simply stack on top of their anchors to solve the mechanic. 
+
+<img class='center' width='70%' src='./greens/green-strategy-1.webp'>
+
+If the <img class='inline fixate-icon'> [Fixate] is selected from a side group, they should move to the middle group with their green and call what group they are from (usually "backup left/right/arrow/circle"). The *float* can then move to that group to even out the numbers. 
+
+<img class='center' width='70%' src='./greens/green-strategy-2.webp'>
+
+If the <img class='inline fixate-icon'> [Fixate] is also an *anchor*, then an additional step is required, as the float will have to bait a green instead of them. Anchors should also communicate when they specifically are fixated (usually "left/right/arrow/circle anchor fixated").
+
+<img class='center' width='70%' src='./greens/green-strategy-3.webp'>
 
 ---
 
@@ -219,9 +229,11 @@ The main variation depends on who is selected as the <img class='inline fixate-i
 
 Targets the <img class='inline fixate-icon'> [Fixate] and two additional random players with large tracking AoEs. After following their targets for five seconds, they will become stationary and explode three second later, dealing moderate damage and inflicting <img class='inline knockback'> [Knockback] and <img class='inline poison'> [Poison] to any players in the area and turning into stationary pools.
 
-These pools persist for two pulse damage and inflict <img class='inline cripple'> [Crippled].
+Pools two pulse damage and inflict <img class='inline cripple'> [Crippled], and last for two minutes or until the next phase change.
 
-AoEs can and should be stacked together to save space.
+#### Strategy
+{: .no_toc}
+This attack has no indicator except for the AoE, so it is relatively common for players not to realize when they are targeted. The common solution is to "wiggle" when the AoEs appear, which makes it easier to see who is targeted (similar to what occurs on KO CM).
 
 <img class=divider>
 
@@ -262,6 +274,13 @@ Launches a massive orb towards the <img class='inline fixate-icon'> [Fixated] pl
 
 After teleporting, Vloxx will maintain an aura for a few seconds that continues to <img class='inline knockback'> [Knockback] and <img class='inline slow'> [Slow] players.
 
+{: .warning}
+There is a common bug where the shockwave from this attack is invisible. Always try to dodge or jump, even if you cannot see it.
+
+#### Strategy
+{: .no_toc}
+Supports should provide <img class='inline aegis'> [Aegis] or <img class='inline stability'> [Stability] for the initial <img class='inline knockback'> [Knockback] and ideally also for the secondary shockwave. <img class='inline superspeed'> [Superspeed] is also extremely useful to increase damage uptime and improve positioning.
+
 ---
 
 ### Ascension's Sacrifice
@@ -285,9 +304,13 @@ After teleporting, Vloxx will maintain an aura for a few seconds that continues 
 
 </div>
 
-Three players, including the <img class='inline fixate-icon'> [Fixate], will get targeted by chains. These <img class='inline float'> [Float] and push away the chained player, summoning a small green below them that requires two player to solve. Failing to solve a green will <img class='inline float'> [Float] the chained player a second time and remove a stack of <img class='inline ascension'> [Ascension] from them.
+Three players, including the <img class='inline fixate-icon'> [Fixate], will get targeted by chains. These <img class='inline float'> [Float] and push away the chained player, summoning a small green below them that requires two players to solve. Failing to solve a green will <img class='inline float'> [Float] the chained player a second time and remove a stack of <img class='inline ascension'> [Ascension] from them.
 
 Players standing in multiple greens will go <img class='inline invuln'> [Downstate]. This cannot be prevented by damage immunity or invulnerability effects such as <img class='inline no-yield'> [We Will Never Yield!] or <img class='inline august-queen'> [Tale of the August Queen], unlike other similar mechanics.
+
+#### Strategy
+{: .no_toc}
+To improve damage uptime overall, supports should <img class='inline stunbreak'> [Stunbreak] the chained players out of the initial <img class='inline float'> [Float]. To improve green solving, a common approach is to try splitting into the same groups that would be used to solve [Judgement of Eternity].
 
 ---
 
@@ -314,6 +337,7 @@ Players standing in multiple greens will go <img class='inline invuln'> [Downsta
 
 Launches a barrage of projectiles in a wide cone towards the <img class='inline fixate-icon'> [Fixate], dealing moderate damage.
 
+{: .warning}
 These projectiles bounce and explode whenever they interact with projectile destruction or reflection effects such as <img class='inline feedback'> [Feedback] or <img class='inline cpc'> [Corrosive Poison Cloud], dealing heavy damage in proximity of the effect.
 
 ---
@@ -343,6 +367,10 @@ Summons a rain of small projectiles on the <img class='inline fixate-icon'> [Fix
 
 {: .note}
 While this attack can technically be reflected, it will often overlap with [Eternal Reflection], which makes it dangerous to do so.
+
+#### Strategy
+{: .no_toc}
+This attack has a very obvious telegraph, meaning players have more than enough time to walk out of the AoEs. Projectile reflection can be used if necessary, but players should be careful in proximity of the [Champion Staff], as it could use [Eternal Reflection] at any point.
 
 <img class=divider>
 
@@ -381,6 +409,10 @@ These attacks can be used by Vloxx during the second phase or the final phase, o
 
 Targets the <img class='inline fixate-icon'> [Fixate] with a large orange arrow. After a brief pause, charges forward for 1500 units, dealing moderate damage, inflicting <img class='inline knockback'> [Knockback] and leaving behind a trail of lingering puddles. These corrupt boons and inflict <img class='inline cripple'> [Crippled] and <img class='inline burning'> [Burning].
 
+#### Strategy
+{: .no_toc}
+This attack often occurs simultaneously with [Judgement of Eternity], making it extremely important to avoid <img class='inline knockback'> [Knockback] affecting player positioning. <img class='inline stability'> [Stability] is thus extremely important, as the dash hits multiple times. The trail itself also strips boons, so if players have to stand inside it, the only surefire way to mitigate this mechanic becomes mass <img class='inline invuln'> [Invulnerability] with <img class='inline august-queen'> [Tale of the August Queen].
+
 ---
 
 ### Raging Storm
@@ -411,6 +443,10 @@ Spears are projectiles and thus affected by projectile disruption.
 {: .legendary}
 Spears are no longer affected by projectile disruption during the final phase.
 
+#### Strategy
+{: .no_toc}
+The most common way to mitigate this mechanic is by defining a rotation of projectile disruption skills to maintain coverage throughout the duration of the mechanic. This commonly involves four people in sequence, each one using skills such as <img class='inline feedback'> [Feedback] and <img class='inline cpc'> [Corrosive Poison Cloud].
+
 ---
 
 ### Thousand Strikes
@@ -434,7 +470,7 @@ Spears are no longer affected by projectile disruption during the final phase.
 
 </div>
 
-Vloxx attacks with a rapid series of strikes in a cone, dealing heavy damage.
+Vloxx attacks with a rapid series of strikes in a cone, dealing heavy damage and inflicting <img class='inline vuln'> [Vulnerability].
 
 ---
 
@@ -463,7 +499,11 @@ Vloxx summons six red arrows in a star, which fire after a delay, <img class='in
 
 The arrows then leave behind narrow walls that inflict <img class='inline knockback'> [Knockback] and 10 stacks of <img class='inline burning'> [Burning] on any players that attempt to walk through their area. It is possible to dodge through these, or walk through with <img class='inline stability'> [Stability] while cleansing the conditions.
 
-Walls persist for 15 seconds, and are not removed on phase changes.
+Walls persist for 10 seconds, and are not removed on phase changes.
+
+#### Strategy
+{: .no_toc}
+This attack has a very long telegraph, leaving players with a lot of time to position inside one of the "slices" before they're cut off. It's important for the entire squad to be inside the same slice to solve mechanics such as [Raging Storm] and [Judgement of Eternity].
 
 <img class=divider>
 
@@ -504,6 +544,12 @@ Throws a massive sword at the <img class='inline fixate-icon'> [Fixate], resulti
 
 This skill deals damage multiple times over its length: players that are too far from the boss can get hit multiple times, resulting in increased damage.
 
+#### Strategy
+{: .no_toc}
+This attack has a very long and recognizable wind-up, giving players a large amount of time to move out of its AoE or dodge. This is especially relevant for the <img class='inline fixate-icon'> [Fixate] in [phase 3], who should also try to be close to the boss in order to avoid multi-hits.
+
+If players are hit by this skill, it's important to quickly re-boon.
+
 ---
 
 ### Echoing Blade
@@ -531,6 +577,10 @@ Circular attack composed of several semicircular AoE slices centered around the 
 
 {: .legendary}
 The projectiles from this attack are larger and ignore projectile disruption.
+
+#### Strategy
+{: .no_toc}
+Players should try to dodge at least some of the damage from this skill, especially if the boss has a lot of <img class='inline empowered'> [Empowered]. Players should use projectile disruption effects on the squad and on the <img class='inline fixate-icon'> [Fixate] to avoid the sword projectiles. When this attack overlaps with [Judgement of Eternity], one projectile disruption effect should be used per green group: try to sort this out beforehand.
 
 ---
 
@@ -565,7 +615,13 @@ Large area attack consisting of a storm of overlapping, small to medium semicirc
 <img class="adapt-width bordered" src="./excision/sample-2.webp">
 </div>
 
-While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack can occur with several different patterns; the boss will select which one to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate]. Patterns tend to leave "safe areas" behind the boss, especially when the <img class='inline fixate-icon'> [Fixate] is in melee range.
+While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack can occur with several different patterns; the boss will select which one to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate].
+
+#### Strategy
+{: .no_toc}
+Patterns tend to leave "safe areas" behind the boss, especially when the <img class='inline fixate-icon'> [Fixate] is in melee range. For this reason, it's common to have them position on the opposite side of the boss from the main stack. This way, the supports can target heal them while avoiding most of the damage on the group.
+
+Situations can occur when the <img class='inline fixate-icon'> [Fixate] changes, as the attack will then usually target the main stack. In this case, players should double dodge to avoid the majority of incoming damage, then heal up and re-boon. Otherwise, mass <img class='inline invuln'> [Invulnerability] skills such as <img class='inline august-queen'> [Tale of the August Queen] are commonly used.
 
 ---
 
@@ -592,7 +648,15 @@ While individual AoEs are not dangerous, the cumulative damage from multiple hit
 
 Vloxx slices through space, opening up a rift that transports him to a different location, 1500 units in the direction of the <img class='inline fixate-icon'> [Fixate]. Any players inside of Vloxx's hitbox will be transported with him. 
 
-The entrance of the rift sucks in players, while the exit pushes them away. Players sucked into the rift will be transported to Vloxx's new location, get <img class='inline knockdown'> [Knockdown], have three boons corrupted and lose a stack of <img class='inline ascension'> [Ascension]. This does not apply to players that were transported with Vloxx's initial teleportation.
+The entrance of the rift sucks in players, while the exit pushes them away. Players sucked into the rift after the initial teleportation will be transported to Vloxx's new location, have three boons corrupted and lose a stack of <img class='inline ascension'> [Ascension].
+
+Any player that takes the rift, whether through the initial teleportation or later on, will get afflicted by <img class='inline knockdown'> [Knockdown].
+
+#### Strategy
+{: .no_toc}
+Groups will either have everyone enter the rift (common with melee strategies) or no-one (requires a ranged strategy). When taking the rift, it's important to mitigate the <img class='inline knockdown'> [Knockdown] either by providing <img class='inline stability'> [Stability] before or with a <img class='inline stunbreak'> [Stunbreak] immediately after.
+
+<img class='inline superspeed'> [Superspeed] is also extremely important to reduce the effect of the suction and pushback effects. This is doubly important for the <img class='inline fixate-icon'> [Fixate], as they will have to position correctly immediately after.
 
 <img class=divider>
 
@@ -775,6 +839,8 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 <!-- Links to buffs and debuffs -->
 [Downstating]: https://wiki.guildwars2.com/wiki/Downstate
 [Invulnerable]: https://wiki.guildwars2.com/wiki/Invulnerability
+[Invulnerability]: https://wiki.guildwars2.com/wiki/Invulnerability
+[Vulnerability]: https://wiki.guildwars2.com/wiki/Vulnerability
 [Might]: https://wiki.guildwars2.com/wiki/Might
 [Resolution]: https://wiki.guildwars2.com/wiki/Resolution
 [Protection]: https://wiki.guildwars2.com/wiki/Protection
@@ -794,6 +860,8 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 [Blinded]: https://wiki.guildwars2.com/wiki/Blinded
 [Confusion]: https://wiki.guildwars2.com/wiki/Confusion
 [Bleeding]: https://wiki.guildwars2.com/wiki/Bleeding
+[Superspeed]: https://wiki.guildwars2.com/wiki/Superspeed
+[Aegis]: https://wiki.guildwars2.com/wiki/Aegis
 
 <!-- Links to enemies and enemy skills -->
 [Champion Staff]: #weapons
@@ -804,3 +872,4 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
+[Stunbreak]: https://wiki.guildwars2.com/wiki/Stun_break
