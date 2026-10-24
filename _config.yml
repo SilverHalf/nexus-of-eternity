@@ -5,6 +5,7 @@ theme: just-the-docs
 url: https://silverhalf.github.io/nexus-of-eternity
 
 favicon_ico: "/images/favicon.ico"
+logo: "/images/logo.png"
 
 aux_links:
   "Source Code": 
@@ -22,6 +23,10 @@ callouts:
   warning:
     title: Warning
     color: warning
+
+  legendary:
+    title: Legendary Mode
+    color: purple
 
 kramdown:
   syntax_highlighter_opts:
