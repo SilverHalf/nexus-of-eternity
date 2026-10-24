@@ -1,5 +1,5 @@
 ---
-title: Credits
+title: Credits & Resources
 layout: page
 nav_order: 100
 ---
