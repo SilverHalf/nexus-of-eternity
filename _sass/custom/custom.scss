@@ -159,6 +159,17 @@ $gold: #e0be00;
     text-decoration: underline;
 }
 
+.subtext {
+    background-color: $sidebar-color;
+    padding: 5;
+    border: 1px solid $sidebar-color;
+    border-radius: 15px;
+    color: #787878;
+    font-size: small;
+    text-align: center;
+    margin: 20px;
+}
+
 .guides-button {
     border: 3px outset;
     background-size: cover;
@@ -322,7 +333,7 @@ color: $body-heading-color;
 }
 
 details {
-	padding: 7px;
+	padding: 15px;
 	background-color: $sidebar-color;
 	border-radius: 2px;
 	margin-bottom: 5px;

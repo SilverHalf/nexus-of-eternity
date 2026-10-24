@@ -440,6 +440,10 @@ Targets the <img class='inline fixate-icon'> [Fixate] with a barrage of 16 spear
 
 Spears are projectiles and thus affected by projectile disruption.
 
+#### Final Phase
+{: .no_toc}
+In [phase 4], the behaviour of this skill changes slightly. Instead of launching one spear per second, Vloxx will launch eight barrages of three or six spears every three seconds.
+
 {: .legendary}
 Spears are no longer affected by projectile disruption during the final phase.
 
@@ -573,14 +577,14 @@ If players are hit by this skill, it's important to quickly re-boon.
 
 </div>
 
-Circular attack composed of several semicircular AoE slices centered around the boss, combined with red rotating sword projectiles. While each slice deals moderate damage, the cumulative damage from multiple hits can quickly become threatening. The sword projectiles apply moderate damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness], and can be deleted using standard projectile disruption.
+Circular attack composed of several semicircular AoE slices centered around the boss, combined with red rotating sword projectiles. While each slice deals moderate damage, the cumulative damage from multiple hits can quickly become threatening. Sword projectiles apply moderate damage and inflict <img class='inline torment'> [Torment] and <img class='inline weakness'> [Weakness], and can be deleted using standard projectile disruption.
 
 {: .legendary}
-The projectiles from this attack are larger and ignore projectile disruption.
+Projectiles from this attack ignore projectile disruption.
 
 #### Strategy
 {: .no_toc}
-Players should try to dodge at least some of the damage from this skill, especially if the boss has a lot of <img class='inline empowered'> [Empowered]. Players should use projectile disruption effects on the squad and on the <img class='inline fixate-icon'> [Fixate] to avoid the sword projectiles. When this attack overlaps with [Judgement of Eternity], one projectile disruption effect should be used per green group: try to sort this out beforehand.
+Players should try to dodge at least some of the damage from this skill, especially if the boss has a lot of <img class='inline empowered'> [Empowered]. Use projectile disruption effects on the squad and on the <img class='inline fixate-icon'> [Fixate] to avoid the sword projectiles. When this attack overlaps with [Judgement of Eternity], one projectile disruption effect should be used per green group: sort this out beforehand.
 
 ---
 
@@ -605,23 +609,47 @@ Players should try to dodge at least some of the damage from this skill, especia
 
 </div>
 
-Large area attack consisting of a storm of overlapping, small to medium semicircular AoE attacks. Each of these deals moderate damage, inflicts <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and strips boons with an internal cooldown of 2 seconds.
+Large scale attack consisting of a storm of overlapping semicircular AoEs with a radius of 250 units. These deal moderate damage after a delay, inflicting <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and stripping boons with an internal cooldown of 2 seconds. While individual attacks are not dangerous, the cumulative damage from multiple hits can quickly become threatening.
 
-#### Excision Extremis Patterns
-{: .no_toc .center}
+Vloxx will randomly select four targets for this attack (three in [phase 4]), while the [Champion Sword] will always select only one. Each target will then be focused by four semicircular sword swipes, resulting in 16 attacks in [phase 3], 12 in [phase 4], and 4 from the [Champion Sword].
 
-<div class="row-container">
-<img class="adapt-width bordered" src="./excision/sample-1.webp">
-<img class="adapt-width bordered" src="./excision/sample-2.webp">
+<details>
+<summary>Pattern Generation Details</summary>
+<div markdown=block>
+
+The position and orientation of the sword attacks used in [Excision Extremis] depends on the orientation of the caster and the relative position of the caster and the target.
+
+<img class=center width='30%' src='./excision/excision-0.webp'>
+
+Attacks originate from a circle 400 units in diameter centered on the target. The first attack will always be on the point of this circle closest to both, with successive attacks positioned through a 90 degree rotation clockwise from the target.
+
+<img class=center width='60%' src='./excision/excision-1.webp'>
+
+The orientation of the first attack will always match the orientation of the caster. Orientation of successive attacks is obtained through a 90 degree rotation clockwise.
+
+<img class=center width='60%' src='./excision/excision-2.webp'>
+
+Combination of origin and orientation of the sword attacks gives us the final pattern.
+
+<img class=center width='60%' src='./excision/excision-3.webp'>
+
 </div>
-
-While individual AoEs are not dangerous, the cumulative damage from multiple hits can quickly become threatening. This attack can occur with several different patterns; the boss will select which one to use based on the phase (3rd or 4th) and the distance of the <img class='inline fixate-icon'> [Fixate].
+</details>
 
 #### Strategy
 {: .no_toc}
-Patterns tend to leave "safe areas" behind the boss, especially when the <img class='inline fixate-icon'> [Fixate] is in melee range. For this reason, it's common to have them position on the opposite side of the boss from the main stack. This way, the supports can target heal them while avoiding most of the damage on the group.
 
-Situations can occur when the <img class='inline fixate-icon'> [Fixate] changes, as the attack will then usually target the main stack. In this case, players should double dodge to avoid the majority of incoming damage, then heal up and re-boon. Otherwise, mass <img class='inline invuln'> [Invulnerability] skills such as <img class='inline august-queen'> [Tale of the August Queen] are commonly used.
+Having the <img class='inline fixate-icon'> [Fixate] position opposite from the stack forces the boss to face away from the main group. This is called *opposition tanking* and results in drastically safer patterns, since when the target is *behind* the caster, all sword AoEs will face *outwards*, reducing overlap and leaving the inside unaffected.
+
+<div markdown=block class=subtext>
+Video: difference between generated patterns when the target is in front of vs. behind the boss. This animation was generated using [Narokath's Excision Simulator](https://narokath.github.io/vloxx-guide/excision-simulator.html).
+</div>
+
+<video class='bordered center' width="80%" controls>
+<source src='../videos/excision-single-target.mp4' type='video/mp4'>
+</video>
+
+On the other hand, when the target is *in front* of Vloxx all AoEs will face *inwards*, increasing the overlap on the group. In this case, out-healing all the incoming damage can be very difficult: players should double dodge to avoid as many AoEs as possible, then heal up and re-boon. Alternatively, mass <img class='inline invuln'> [Invulnerability] skills such as <img class='inline august-queen'> [Tale of the August Queen] can be used.
 
 ---
 
@@ -662,7 +690,7 @@ Groups will either have everyone enter the rift (common with melee strategies) o
 
 ## Special Attacks
 
-While technically single attacks, these mechanics are more like sequences of consecutive attacks that only appear in specific moments of the fight.
+These mechanics consist of sequences of consecutive attacks that only appear in specific moments of the fight.
 
 ---
 
@@ -670,9 +698,12 @@ While technically single attacks, these mechanics are more like sequences of con
 
 This attack is cast upon reaching *70%*, *%40%* and *10%* of Vloxx's maximum HP, triggering the beginning of his split phases. Vloxx will become <img class='inline invuln'> [Invulnerable] and start charging up a massive strike. While doing so, he will summon a [Champion Elemental] and three [Elite Elementals], with the composition of enemies depending on the specific split phase.
 
-He will then start casting large AoEs targeting the group. These slowly fill, dealing moderate damage and applying <img class='inline float'> [Float] to players caught inside.
+{: .legendary}
+Vloxx will instead summon four [Champion Elementals](#champion-elemental).
 
-This attack can be interrupted by killing all the summoned elementals, which will unlock Vloxx's <img class='inline defiance'> [Defiance Bar]. Breaking this bar will stop the attack, grant Vloxx 10 <img class='inline empowered'> [Empowered], and begin the following phase.
+He will then start casting large AoEs targeting the group, which slowly fill, dealing moderate damage and applying <img class='inline float'> [Float] to players caught inside on completion.
+
+This attack can be interrupted by killing all the summoned elementals, which unlocks Vloxx's <img class='inline defiance'> [Defiance Bar]. Breaking this bar will stop the attack, grant Vloxx 10 <img class='inline empowered'> [Empowered], and begin the following phase.
 
 If the attack is allowed to complete, 67 seconds after Vloxx becomes invulnerable, it will instantly defeat all players.
 
@@ -680,7 +711,7 @@ If the attack is allowed to complete, 67 seconds after Vloxx becomes invulnerabl
 
 ### Threshold of Eternity
 
-This attack is used by Vloxx at the beginning of the 10% phase. He commences it by becoming <img class='inline invuln'> [Invulnerable] while changing to his smaller meditation form over the course of 15 seconds, upon which he becomes vulnerable once more.
+This attack is used by Vloxx at the beginning of the 10% phase. He begins by becoming <img class='inline invuln'> [Invulnerable] while changing to his final form over the course of 15 seconds, upon which he becomes vulnerable once more.
 
 While this transformation is ongoing, he will start casting a combination of attacks from all three phases.
 
@@ -694,7 +725,7 @@ While this transformation is ongoing, he will start casting a combination of att
 
 These mechanics rotate continuously until the boss is dead.
 
-Beginning this attack will also start a timer, which overrides the enrage for the fight and shortens it to two minutes. If this timer runs out, Vloxx will instantly defeat all players.
+This attack will also start a timer which overrides the enrage for the fight, shortening it to two minutes if there was more time available. If this timer runs out, Vloxx will instantly defeat all players.
 
 <img class=divider>
 
