@@ -6,18 +6,14 @@ nav_order: 2
 
 [Return to Home](../index.html){: .btn} [Strategy Guide](../strategy/index.html){: .btn}
 
-# Vloxx
-{: .no_toc .center}
+# Vloxx Mechanical Reference
+{: .no_toc}
 
-<img class='bordered' src='../images/vloxx.webp'>
-
-| **Health** |  84'939'840 (CM), 102'777'208 (LM) |
-| **Defiance Bar** | 6000 |
-| **Armor** | 2597 (standard) |
-| **Hitbox** | 180 (medium) |
-| **Enrage** |  10 minutes, kills everyone on running out. |
-
-This page contains a detailed reference of the various attacks and mechanics present in the encounter.
+This page contains a detailed reference of the various attacks and mechanics present in the encounter. It is structured into the following sections:
+1. [Overview](#overview) - basic description of the fight and its main points.
+2. [Structure](#fight-structure) - analysis of fight structure, transitions and difference between phases.
+3. [Mechanics](#general-mechanics) - description of all mechanics in the encounter, divided by phase.
+4. [Enemies](#enemies) - description of all minor adds and enemies appearing in the encounter.
 
 <details>
 <summary><b>Table of Contents</b></summary>
@@ -29,51 +25,188 @@ This page contains a detailed reference of the various attacks and mechanics pre
 
 <img class=divider>
 
-## Fight Structure
+## Overview
 
-The battle against Vloxx is divided into three main phases, three split phases and a final phase.
+<div class='sidebar-background row-container margins'>
 
----
+<div class='adapt-width-fill'>
+<img class='bordered' src='../images/vloxx.webp'>
+</div>
 
-### Main Phases
+<div class='adapt-width' markdown=block>
 
-Vloxx's main phases are styled around his three weapons: *Staff*, *Spear* and *Sword*. Each one is mostly limited to a set of mechanics specific to the phase's weapon, plus a few attacks that are present in all three.
+| **Health** |  84'939'840 (CM), 102'777'208 (LM) |
+| **Defiance Bar** | 6000 |
+| **Armor** | 2597 (standard) |
+| **Hitbox** | 180 (medium) |
+| **Enrage** |  10 minutes, kills everyone on running out. |
 
-Vloxx's behaviour in the main phases is based on a priority-cooldown system:
+</div>
+
+</div>
+
+Vloxx is a challenging, mobile boss with a wide variety of mechanics and attacks, and a combat style focused around his weapons: *Staff*, *Spear* and *Sword*. The weapon he is wielding depends on the specific phase of the fight, and determines the majority of his move-set, which becomes more challenging the further the fight progresses.
+
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef invis fill:#000000,stroke:#000000,color:#000000
+    classDef green fill:#00540d,stroke-width:0,color:#fff
+    classDef blue fill:#0072c9,stroke-width:0,color:#fff
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    phase1("`100% - 70%
+    Staff`")
+    phase2("`70% - 40%
+    Spear`")
+    phase3("`40% - 10%
+    Sword`")
+    phase4("`10% - 0%
+    Perfect Form`")
+
+    phase1 --> phase2
+    phase2 --> phase3
+    phase3 --> phase4
+
+    click phase1 "#100---70---staff-phase"
+    click phase2 "#70---40---spear-phase"
+    click phase3 "#40---10---sword-phase"
+    click phase4 "#10---0---perfect-form"
+
+```
+{: .center}
+
+Vloxx's behaviour is based on a priority-cooldown system:
 - All active mechanics have their own *cooldown* and *priority*.
 - The boss will always cast the highest priority skill that is off-cooldown.
 
-While this is similar in concept to bosses such as [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html) and [Ura](https://silverhalf.github.io/mount-balrior/ura/overview.html), in practice Vloxx's relatively short cooldowns and absence of skill interruptions means the boss will usually present the same order of mechanics consistently for each phase. Exceptions to this standard order occur in high DPS situations, where skills do not have the time to come off-cooldown after split phases.
+While this is similar in concept to bosses such as [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html) and [Ura](https://silverhalf.github.io/mount-balrior/ura/overview.html), in practice Vloxx's relatively short cooldowns and absence of skill interruptions means the boss will usually present the same order of mechanics consistently for each phase.
 
-<div class="sidebar-background" markdown=block>
-#### 100% - 70% - Staff Phase
-{: .no_toc}
-Vloxx's staff is modeled after [Ancora Pax](https://wiki.guildwars2.com/wiki/Ancora_Pax). This phase is characterized by a large amount of projectiles: reflecting or blocking these can be potentially dangerous since some will bounce off, resulting in several potentially dangerous AoEs.
+Exceptions to this standard order occur in high DPS situations, where skills do not have the time to come off-cooldown after split phases, and in situations where the boss cannot properly select targets or loses time walking.
+
+---
+
+#### <img class='inline empowered'> Empowered and <img class='inline ascension'> Ascension
+
+These are diametrically opposite effects that have a huge impact on the encounter.
+
+<img class='inline empowered'> [Empowered], similar to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), increases Vloxx's outgoing damage, and is gained whenever players fail mechanics. However, unlike these encounters, it also *reduces* incoming damage, making it vastly more dangerous. Furthermore, Vloxx will passively gain this effect from any living [Champion Weapons](#weapons), additionally gaining 10 <img class='inline empowered'> stacks whenever the boss transitions out of a split phase.
+
+When this mechanics is mismanaged, the group will deal increasingly less damage as the fight progresses, potentially dying to enrage. Meanwhile, dangerous mechanics in the later phases will be turbocharged by a massive damage buff, putting huge amounts of stress on the healers.
+
+The only way to curb this effect is through its opposing mechanic, <img class='inline ascension'> [Ascension]. This is a buff applied to players, stacking up to 10. Losing any amount of <img class='inline ascension'> [Ascension] results in the boss gaining the same amount of <img class='inline empowered'> [Empowered], but the opposite is also true: gaining <img class='inline ascension'> [Ascension] is the only way of reducing <img class='inline empowered'> [Empowered].
+
+```mermaid
+flowchart TD
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef invis fill:#000000,stroke:#000000,color:#000000
+    classDef red fill:#590000,stroke-width:0,color:#fff
+    classDef blue fill:#0072c9,stroke-width:0,color:#fff
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    fails(Failed Mechanics)
+    weapons(Champion Weapons)
+    splits(Split Phases)
+    ascension(["`<img class='inline ascension'> Ascension`"])
+    empowered(["`<img class='inline empowered'> Empowered`"])
+
+    fails -->|Decrease|ascension
+    weapons -->|Increase when CC'd|ascension
+    weapons -->|Passively Increase|empowered
+    splits -->|Increase|empowered
+    ascension -->|Affects Inversely|empowered
+
+    class empowered red
+    class ascension blue
+
+    click ascension "#-ascension"
+    click empowered "#-empowered"
+    click splits "#split-phases"
+    click weapons "#weapons"
+```
+{: .center}
+
+The only source of <img class='inline ascension'> [Ascension] is breaking the <img class='inline defiance'> [Defiance Bar] of any [Champion Weapons](#weapons) once they reach 25% of their maximum HP. Therefore, the encounter  mandates a large amount of cleave and intelligent positioning to both reduce the time that weapons spend alive and provide a steady source of <img class='inline ascension'> [Ascension] to offset the boss' passive <img class='inline empowered'> [Empowered] gains.
+
+---
+
+#### Fixation
+
+Much of Vloxx's skill targeting is based on the fixation mechanic. Vloxx will select a <img class='inline fixate-icon'> [Fixated] player at the beginning of the fight, who then becomes the focus of most of his mechanics. Vloxx will then periodically swap his target to another random player.
+
+The random nature of this mechanics means that players have to be ready to improvise and reposition rapidly in response to changes, especially when dealing with [Judgement of Eternity] and [Excision Extremis], which can both potentially end a run if mismanaged.
+
+---
+
+#### Table of Mechanics
+
+A brief description of the primary attacks performed by Vloxx in the encounter. Click on a mechanic to view additional information.
+
+|**Mechanic**|**Phase**|**Common Name**|**Brief Description**|
+| [Judgement of Eternity] | All | Greens | Three greens requiring three people each. |
+| [Probability Distribution] | All | Pools | Three large AoEs that leave lingering pools. |
+| [Annihilating Orb] | <img class='inline staff'> | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
+| [Ascension's Sacrifice] | <img class='inline staff'> | Chains | Targets players with chains that require a friend. |
+| [Eternal Reflection] | <img class='inline staff'> | Cone, Barrage | Launches a barrage of exploding projectiles in a cone. |
+| [Surrounding Curse] | <img class='inline staff'> <img class='inline perfect-form'> | Small AoEs | Summons a rain of projectiles on the group. |
+| [Cosmic Charge] | <img class='inline spear'> | Charge | Charges in a line, leaving damaging pools on its trail. |
+| [Raging Storm] | <img class='inline spear'> <img class='inline perfect-form'> | Spears | Launches a series of spears that <img class='inline knockback'> [Knockback] and leave lingering pools. |
+| [Thousand Strikes] | <img class='inline spear'> | Cone | A barrage of spear thrusts in a cone. |
+| [Worldpiercer] | <img class='inline spear'> | Walls, Pizza | Six walls divide the arena into six slices. |
+| [Division Eternal] | <img class='inline sword'> | Rectangle | Large rectangular damaging AoE. |
+| [Echoing Blade] | <img class='inline sword'> | Circle, Swords | Circular attack that launches rotating sword projectiles. |
+| [Excision Extremis] | <img class='inline sword'> <img class='inline perfect-form'> | Geometry, Bladestorm | Large amount of overlapping semicircular AoE damage and boonstrip. |
+| [Slice Through Reality] | <img class='inline sword'> | Teleport, Suction | Teleport skill that leaves a rift that sucks in players. |
+
+<img class='divider'>
+
+## Fight Structure
+
+The battle against Vloxx is divided into three main phases, three split phases and a final phase, following the same structure as recent releases such as the [Temple of Febe](https://silverhalf.github.io/temple-of-febe) and [Mount Balrior](https://silverhalf.github.io/mount-balrior) encounters.
+
+---
+
+### 100% - 70% - Staff Phase
+
+This phase is characterized by a large amount of projectiles: reflecting or blocking these can be potentially dangerous since some will bounce off, resulting in several potentially dangerous AoEs. Vloxx's staff is modeled after [Ancora Pax](https://wiki.guildwars2.com/wiki/Ancora_Pax).
 
 *Weapon Skills:* [Annihilating Orb], [Ascension's Sacrifice], [Eternal Reflection], [Surrounding Curse]
-</div>
 
-<div style="padding:10px" markdown=block>
-#### 70% - 40% - Spear Phase
-{: .no_toc}
+---
+
+### 70% - 40% - Spear Phase
+
 Vloxx's spear is modeled after [Ancora Bellum](https://wiki.guildwars2.com/wiki/Ancora_Bellum). This phase is mostly characterized by [Worldpiercer] heavily limiting squad movement while [Raging Storm] requires either permanent projectile block or constant repositioning.
 
 *Weapon Skills:* [Cosmic Charge], [Raging Storm], [Thousand Strikes], [Worldpiercer]
-</div>
 
-<div class="sidebar-background" markdown=block>
-#### 40% - 10% - Sword Phase
-{: .no_toc}
+---
+
+### 40% - 10% - Sword Phase
+
 Vloxx's sword is modeled after [Wages of Stars](https://wiki.guildwars2.com/wiki/Wages_of_Stars). This phase is characterized by a large amount of AoE Damage, especially from [Echoing Blade] and [Excision Extremis]. This requires a lot of attention from the group to either out-heal or avoid most of the danger.
 
 *Weapon Skills:* [Division Eternal], [Echoing Blade], [Excision Extremis], [Slice Through Reality]
-</div>
+
+---
+
+### 10% - 0% - Perfect Form
+
+At the beginning of this phase, Vloxx will transition into his final form. He will then cast [Threshold of Eternity], which kills all players 2 minutes after the beginning of the phase. During this cast, Vloxx will constantly cycle through a subset of skills from all previous phases of the encounter:
+- [Judgement of Eternity] (Greens)
+- [Surrounding Curse] (Small AoEs)
+- [Excision Extremis] (Swords)
+- [Probability Distribution] (Puddles)
+- [Raging Storm] (Spears)
+- [Excision Extremis] (Swords)
 
 ---
 
 ### Split Phases
 
-Each split phase starts with Vloxx teleporting to the center of the arena and gaining <img class='inline defensive'> [Defensive Inspiration](). An enemy champion will them spawn, along with two elites. The type of enemy depends on the phase:
+Each split phase starts with Vloxx teleporting to the center of the arena and gaining <img class='inline defensive'> [Defensive Inspiration](), making them <img class='inline invuln'> [Invulnerable]. An enemy champion will them spawn, along with two elites. The type of enemy depends on the phase:
 - 70% - [Cosmic Piercer](#split-phase-enemies) champion and elites.
 - 40% - [Cosmic Bulwark](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) elites.
 - 10% - [Cosmic Sunderer](#split-phase-enemies) champion, [Cosmic Piercer](#split-phase-enemies) and [Cosmic Bulwark](#split-phase-enemies) elites.
@@ -82,20 +215,6 @@ Each split phase starts with Vloxx teleporting to the center of the arena and ga
 All enemies summoned in split phases will be Champion versions instead.
 
 Killing all three enemies unlocks Vloxx's <img class='inline defiance'> [Defiance Bar], allowing the squad to break it and continue into the following phase.
-
----
-
-### Final Phase
-
-At the beginning of this phase, Vloxx will transition into his final form. He will then cast [Threshold of Eternity], which kills all players 2 minutes after the beginning of the phase. During this cast, Vloxx will constantly cycle through the same set of skills ad infinitum:
-1. [Judgement of Eternity] (Greens)
-2. [Surrounding Curse] (Small AoEs)
-3. [Excision Extremis] (Swords)
-4. [Probability Distribution] (Puddles)
-5. [Raging Storm] (Spears)
-6. [Excision Extremis] (Swords)
-
-This makes for a challenging phase, since incoming damage and mechanical pressure are extremely high up until the boss dies.
 
 <img class=divider>
 
@@ -114,7 +233,7 @@ These mechanics are present for the entirety of the fight independent of the pha
 
 ### <img class='inline empowered'> Empowered
 
-<img class='inline empowered'> [Empowered] is an effect granted to Vloxx by several sources over the course of the encounter. Each stack grants him 5% increased outgoing damage and 1% reduced incoming damage, stacking additively. Additionally, Vloxx starts gaining boons at certain stack thresholds:
+<img class='inline empowered'> [Empowered] is an effect gained by Vloxx from several sources over the course of the encounter. Each stack grants him 5% increased outgoing damage and 1% reduced incoming damage, stacking additively. Additionally, Vloxx starts gaining boons at certain stack thresholds:
 - At 5 <img class='inline empowered'> stacks, he periodically gains <img class='inline might'> [Might].
 - At 15 <img class='inline empowered'> stacks, he periodically gains 25 <img class='inline might'> [Might].
 - At 50 <img class='inline empowered'> stacks, he periodically gains <img class='inline resolution'> [Resolution].
@@ -149,7 +268,7 @@ Players will *gain* <img class='inline ascension'> stacks whenever they pick up 
 
 ### <img class='inline fixate'> Fixate
 
-This effect is applied to a random player in Vloxx's cone of vision. If no one is in sight, it will select the closest person instead. This player will hear an audio cue and gain an <img class='inline fixate-icon'> icon over their head showing the effect. They will then become the primary target for most of Vloxx's skills.
+This effect is applied to a random player in Vloxx's range. This player will hear an audio cue and gain an <img class='inline fixate-icon'> icon over their head showing the effect. They will then become the primary target for most of Vloxx's skills.
 
 The effect lasts for 60 seconds, and is re-assigned 10 seconds after running out.
 
@@ -623,13 +742,12 @@ The position and orientation of the sword attacks used in [Excision Extremis] de
 
 Attacks originate from a circle 400 units in diameter centered on the target. The first attack will always be on the point of this circle closest to both, with successive attacks positioned through a 90 degree rotation clockwise from the target.
 
-<img class=center width='60%' src='./excision/excision-1.webp'>
+<div class='row-container'>
+<img class='adapt-width center' src='./excision/excision-1.webp'>
+<img class='adapt-width center' src='./excision/excision-2.webp'>
+</div>
 
-The orientation of the first attack will always match the orientation of the caster. Orientation of successive attacks is obtained through a 90 degree rotation clockwise.
-
-<img class=center width='60%' src='./excision/excision-2.webp'>
-
-Combination of origin and orientation of the sword attacks gives us the final pattern.
+The orientation of the first attack will always match the orientation of the caster. Orientation of successive attacks is obtained through a 90 degree rotation clockwise. Combining then origin and orientation of the sword attacks results in the final pattern.
 
 <img class=center width='60%' src='./excision/excision-3.webp'>
 
@@ -854,10 +972,10 @@ A champion and three Elite versions of these enemies are spawned at the beginnin
 [Fixate]: #-fixate
 [Fixated]: #-fixate
 
-[Phase 1]: #staff-phase
-[Phase 2]: #spear-phase
-[Phase 3]: #sword-phase
-[Phase 4]: #final-phase
+[Phase 1]: #100---70---staff-phase
+[Phase 2]: #70---40---spear-phase
+[Phase 3]: #40---10---sword-phase
+[Phase 4]: #10---0---perfect-form
 
 <!-- Links to classes and specializations -->
 
