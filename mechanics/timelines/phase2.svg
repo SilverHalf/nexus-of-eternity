@@ -1,0 +1,74 @@
+<svg viewBox="0 0 980 220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family:Courier New, monospace;
+      fill: white;
+      font-size: small;
+    }
+    line {
+      stroke: #404040;
+      opacity: 1;
+      stroke-width: 1;
+    }
+  </style>
+  <line x1="192.0" y1="22" x2="192.0" y2="186"></line>
+  <text class="tl-ax" x="192.0" y="202" text-anchor="middle">0s</text>
+  <line x1="346.0" y1="22" x2="346.0" y2="186"></line>
+  <text class="tl-ax" x="346.0" y="202" text-anchor="middle">30s</text>
+  <line x1="500.0" y1="22" x2="500.0" y2="186"></line>
+  <text class="tl-ax" x="500.0" y="202" text-anchor="middle">60s</text>
+  <line x1="654.0" y1="22" x2="654.0" y2="186"></line>
+  <text class="tl-ax" x="654.0" y="202" text-anchor="middle">90s</text>
+  <line x1="808.0" y1="22" x2="808.0" y2="186"></line>
+  <text class="tl-ax" x="808.0" y="202" text-anchor="middle">120s</text>
+  <text class="tl-nm" x="180" y="47.0" text-anchor="end">Cosmic Charge</text>
+  <line x1="192" y1="43.0" x2="962" y2="43.0"  ></line>
+  <circle cx="225.4" cy="43.0" r="6.0" fill="#ED6936"></circle>
+  <text class="tl-t" x="225.4" y="34.0" text-anchor="middle">6</text>
+  <circle cx="507.2" cy="43.0" r="5.1" fill="#ED6936"></circle>
+  <text class="tl-t" x="507.2" y="34.0" text-anchor="middle">61</text>
+  <circle cx="752.8" cy="43.0" r="4.9" fill="#ED6936" ></circle>
+  <text class="tl-t" x="752.8" y="34.0" text-anchor="middle">109</text>
+  <circle cx="922.2" cy="43.0" r="3.3" fill="#ED6936" ></circle>
+  <text class="tl-nm" x="180" y="73.0" text-anchor="end">Worldpiercer</text>
+  <line x1="192" y1="69.0" x2="962" y2="69.0"    ></line>
+  <circle cx="265.9" cy="69.0" r="6.0" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="265.9" y="60.0" text-anchor="middle">14</text>
+  <circle cx="454.3" cy="69.0" r="5.3" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="454.3" y="60.0" text-anchor="middle">51</text>
+  <circle cx="641.9" cy="69.0" r="5.0" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="641.9" y="60.0" text-anchor="middle">88</text>
+  <circle cx="854.7" cy="69.0" r="4.5" fill="#7fdefd" ></circle>
+  <text class="tl-nm" x="180" y="99.0" text-anchor="end">Raging Storm</text>
+  <line x1="192" y1="95.0" x2="962" y2="95.0"    ></line>
+  <circle cx="298.8" cy="95.0" r="5.8" fill="#7a0287" ></circle>
+  <text class="tl-t" x="298.8" y="86.0" text-anchor="middle">21</text>
+  <circle cx="555.4" cy="95.0" r="5.0" fill="#7a0287" ></circle>
+  <text class="tl-t" x="555.4" y="86.0" text-anchor="middle">71</text>
+  <circle cx="713.3" cy="95.0" r="3.3" fill="#7a0287" ></circle>
+  <circle cx="807.0" cy="95.0" r="4.7" fill="#7a0287" ></circle>
+  <circle cx="886.8" cy="95.0" r="3.3" fill="#7a0287" ></circle>
+  <text class="tl-nm" x="180" y="125.0" text-anchor="end">Thousand Strikes</text>
+  <line x1="192" y1="121.0" x2="962" y2="121.0"    ></line>
+  <circle cx="347.0" cy="121.0" r="6.0" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="347.0" y="112.0" text-anchor="middle">30</text>
+  <circle cx="598.6" cy="121.0" r="6.0" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="598.6" y="112.0" text-anchor="middle">79</text>
+  <circle cx="845.0" cy="121.0" r="6.0" fill="#7fdefd" ></circle>
+  <text class="tl-t" x="845.0" y="112.0" text-anchor="middle">127</text>
+  <text class="tl-nm" x="180" y="151.0" text-anchor="end">Prob. Distribution</text>
+  <line x1="192" y1="147.0" x2="962" y2="147.0"    ></line>
+  <circle cx="374.2" cy="147.0" r="5.6" fill="#ED6936" ></circle>
+  <text class="tl-t" x="374.2" y="138.0" text-anchor="middle">36</text>
+  <circle cx="624.7" cy="147.0" r="5.0" fill="#ED6936" ></circle>
+  <text class="tl-t" x="624.7" y="138.0" text-anchor="middle">84</text>
+  <circle cx="884.5" cy="147.0" r="4.4" fill="#ED6936" ></circle>
+  <text class="tl-nm" x="180" y="177.0" text-anchor="end">Judgment of Eternity</text>
+  <line x1="192" y1="173.0" x2="962" y2="173.0"    ></line>
+  <circle cx="203.3" cy="173.0" r="6.0" fill="#039d00" ></circle>
+  <text class="tl-t" x="203.3" y="164.0" text-anchor="middle">2</text>
+  <circle cx="484.6" cy="173.0" r="5.2" fill="#039d00" ></circle>
+  <text class="tl-t" x="484.6" y="164.0" text-anchor="middle">57</text>
+  <circle cx="716.6" cy="173.0" r="4.9" fill="#039d00" ></circle>
+  <text class="tl-t" x="716.6" y="164.0" text-anchor="middle">102</text>
+</svg>
