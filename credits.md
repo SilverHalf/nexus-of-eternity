@@ -13,5 +13,6 @@ nav_order: 100
 - Icons and skill information are referenced from the [Guild Wars 2 Wiki](https://wiki.guildwars2.com/).
 - Miniboss images and icons were taken from [Elite Insights](https://github.com/baaron4/GW2-Elite-Insights-Parser).
 - [Narokath's Excision Simulator](https://narokath.github.io/vloxx-guide/excision-simulator.html) was used to make some animations for the mechanics section.
+- Phase timelines are sourced from [elisethechemist's Vloxx Field Guide](https://elisethechemist.com/INT/Vloxx_CM_Field_Guide_dark.html).
 - [*Stina*](https://stina.tiiny.site/) made the site icon and favicon.
 - [*Mike*](https://www.youtube.com/watch?v=OhsuU52y48I) and [*Wolf*](https://www.youtube.com/watch?v=YCqzRBXrBas)'s PoVs were used to make videos for Vloxx's abilities and mechanics.

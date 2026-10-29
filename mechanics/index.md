@@ -148,7 +148,7 @@ A brief description of the primary attacks performed by Vloxx in the encounter. 
 
 |**Mechanic**|**Phase**|**Common Name**|**Brief Description**|
 | [Judgement of Eternity] | All | Greens | Three greens requiring three people each. |
-| [Probability Distribution] | All | Pools | Three large AoEs that leave lingering pools. |
+| [Probability Distribution] | All | Pools, Spreads | Three large AoEs that leave lingering pools. |
 | [Annihilating Orb] | <img class='inline staff'> | Orb, Teleport | Launches a massive orb in a line, then teleports to its final location. |
 | [Ascension's Sacrifice] | <img class='inline staff'> | Chains | Targets players with chains that require a friend. |
 | [Eternal Reflection] | <img class='inline staff'> | Cone, Barrage | Launches a barrage of exploding projectiles in a cone. |
@@ -414,27 +414,44 @@ Players standing in multiple greens will go <img class='inline invuln'> [Downsta
 
 Greens have a maximum range of 3000 units. The number of greens in this mechanic depends on the number of living players: with less players alive, fewer greens will spawn so that the mechanic is always solvable.
 
-#### Strategy
+---
+
+#### Strategy (Anchors)
 {: .no_toc}
-It is customary to choose two players to act as *green baiters*. These are usually melee DPS or boonDPS, and their job is to stay inside the boss's hitbox in order to get targeted by this mechanic.
 
-The squad can be divided then into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. These *anchors* are usually the two *green baiters* for the side groups, and the <img class='inline tag'> tag for the middle group. The tenth person has a special role, and is usually called the *joker* or the *float*. 
+The squad is divided into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. The *anchors* for the side groups act as *green baiters*, and attempt to stand  close to the boss to get targeted by a green. The tenth person is usually called the *joker* or the *float*. 
 
-<img class='center' width='80%' src='./greens/green-strategy.webp'>
+<img class='center' width='60%' src='./greens/green-strategy.webp'>
 
-When solving greens, all three groups will position referenced to the tag, with each anchor taking a side. Improvisation depends on who is selected as the <img class='inline fixate-icon'> [Fixate], as this is always selected randomly. Ideally the fixate should always be in the center, as this makes it easier to bait out mechanics in a determined direction.
+When the <img class='inline fixate-icon'> [Fixate] is selected from the middle group, all players can stack on top of their anchor to solve the mechanic with no additional adjustments.
 
-The easiest situation is when the <img class='inline fixate-icon'> [Fixate] is selected from the middle group. In this case, no additional adjustments are necessary and players can simply stack on top of their anchors to solve the mechanic. 
+<img class='center' width='60%' src='./greens/green-strategy-1.webp'>
 
-<img class='center' width='70%' src='./greens/green-strategy-1.webp'>
+If the <img class='inline fixate-icon'> [Fixate] is selected from a side group, they should move to the middle and call for a backup (usually "backup left/right/arrow/circle"). The *float* can then move to even out the numbers. 
 
-If the <img class='inline fixate-icon'> [Fixate] is selected from a side group, they should move to the middle group with their green and call what group they are from (usually "backup left/right/arrow/circle"). The *float* can then move to that group to even out the numbers. 
+<img class='center' width='60%' src='./greens/green-strategy-2.webp'>
 
-<img class='center' width='70%' src='./greens/green-strategy-2.webp'>
+{: .note}
+Whenever a new player is fixated, they should call their group to ensure the *float* already knows where to go.
 
-If the <img class='inline fixate-icon'> [Fixate] is also an *anchor*, then an additional step is required, as the float will have to bait a green instead of them. Anchors should also communicate when they specifically are fixated (usually "left/right/arrow/circle anchor fixated").
+If the <img class='inline fixate-icon'> [Fixate] is also an *anchor*, the *float* should also bait a green in their stead. Anchors should therefore communicate when they specifically are fixated (usually "left/right/arrow/circle anchor fixated").
 
-<img class='center' width='70%' src='./greens/green-strategy-3.webp'>
+<img class='center' width='60%' src='./greens/green-strategy-3.webp'>
+
+---
+
+#### Strategy (Subgroups)
+{: .no_toc}
+
+The squad is divided into a *melee* group and a *ranged* group. One player from the ranged sub will act as the *joker* or *float*.
+
+<img class='center' width='45%' src='./greens/green-strategy-subs.webp'>
+
+The mechanic is solved by having the <img class='inline fixate-icon'> [Fixate] stack with the healers, while all four player from the *melee* group try to bait a green. This should result in two of them getting targeted: one of them will then move over to the ranged group. This way, all three groups will have a green.
+
+<img class='center' width='90%' src='./greens/green-strategy-subs-1.webp'>
+
+Whenever the <img class='inline fixate-icon'> [Fixate] is one of the healers, the *float* should move to their group. Otherwise, they can play in the melee group. If a person in the *ranged* group accidentally baits a green, they can move to that group to backup if necessary.
 
 ---
 
@@ -450,7 +467,7 @@ If the <img class='inline fixate-icon'> [Fixate] is also an *anchor*, then an ad
 
 <div class='adapt-width' markdown=block>
 
-|*Common Name*| Large AoEs, Puddles |
+|*Common Name*| Puddles, Spreads |
 |*Used By*| Vloxx |
 |*Used in Phases*| All |
 |*Cooldown*| 30 seconds |
@@ -784,8 +801,6 @@ This skill deals damage multiple times over its length: players that are too far
 {: .no_toc}
 This attack has a very long and recognizable wind-up, giving players a large amount of time to move out of its AoE or dodge. This is especially relevant for the <img class='inline fixate-icon'> [Fixate] in [phase 3], who should also try to be close to the boss in order to avoid multi-hits.
 
-If players are hit by this skill, it's important to quickly re-boon.
-
 ---
 
 ### Echoing Blade
@@ -841,9 +856,9 @@ Players should try to dodge at least some of the damage from this skill, especia
 
 </div>
 
-Large scale attack consisting of a storm of overlapping semicircular AoEs with a radius of 250 units. These deal moderate damage after a delay, inflicting <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding], and stripping boons with an internal cooldown of 2 seconds. While individual attacks are not dangerous, the cumulative damage from multiple hits can quickly become threatening.
+Large scale attack consisting of a storm of overlapping semicircular AoEs with a radius of 250 units. These deal moderate damage after a delay, inflicting <img class='inline cripple'> [Crippled] and <img class='inline bleeding'> [Bleeding] and stripping boons with an internal cooldown of 2 seconds. While individual attacks are not dangerous, the cumulative damage from multiple hits can quickly become threatening.
 
-Vloxx will randomly select four targets for this attack (three in [phase 4]), while the [Champion Sword] will always select only one. Each target will then be focused by four semicircular sword swipes, resulting in 16 attacks in [phase 3], 12 in [phase 4], and 4 from the [Champion Sword].
+Vloxx will randomly select four targets for this attack (three in [phase 4]), while the [Champion Sword] will always select only one. Each target will then generate four semicircular sword swipes, resulting in 16 attacks in [phase 3], 12 in [phase 4], and 4 from the [Champion Sword].
 
 <details>
 <summary>Pattern Generation Details</summary>
@@ -860,7 +875,7 @@ Attacks originate from a circle 400 units in diameter centered on the target. Th
 <img class='adapt-width center' src='./excision/excision-2.webp'>
 </div>
 
-The orientation of the first attack will always match the orientation of the caster. Orientation of successive attacks is obtained through a 90 degree rotation clockwise. Combining then origin and orientation of the sword attacks results in the final pattern.
+The orientation of the first attack will always match the orientation of the caster. Orientation of successive attacks is obtained through a 90 degree rotation clockwise. Combining the origin and orientation of the sword attacks results in the final pattern.
 
 <img class=center width='60%' src='./excision/excision-3.webp'>
 
