@@ -1,0 +1,113 @@
+<svg viewBox="0 0 980 220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family:Courier New, monospace;
+      fill: white;
+      font-size: small;
+    }
+    line {
+      stroke: #404040;
+      opacity: 1;
+      stroke-width: 1;
+    }
+  </style>
+  <line x1="192.0" y1="22" x2="192.0" y2="186" ></line>
+  <text x="192.0" y="202" text-anchor="middle">0s</text>
+  <line x1="302.0" y1="22" x2="302.0" y2="186" ></line>
+  <text x="302.0" y="202" text-anchor="middle">30s</text>
+  <line x1="412.0" y1="22" x2="412.0" y2="186" ></line>
+  <text x="412.0" y="202" text-anchor="middle">60s</text>
+  <line x1="522.0" y1="22" x2="522.0" y2="186" ></line>
+  <text x="522.0" y="202" text-anchor="middle">90s</text>
+  <line x1="632.0" y1="22" x2="632.0" y2="186" ></line>
+  <text x="632.0" y="202" text-anchor="middle">120s</text>
+  <line x1="742.0" y1="22" x2="742.0" y2="186" ></line>
+  <text x="742.0" y="202" text-anchor="middle">150s</text>
+  <line x1="852.0" y1="22" x2="852.0" y2="186" ></line>
+  <text x="852.0" y="202" text-anchor="middle">180s</text>
+  <text x="962.0" y="202" text-anchor="middle">210s</text>
+  <text x="180" y="47.0" text-anchor="end">Judgment of Eternity</text>
+  <line x1="192" y1="43.0" x2="962" y2="43.0" ></line>
+  <circle cx="199.3" cy="43.0" r="5.8" fill="#039d00"></circle>
+  <text  x="199.3" y="34.0" text-anchor="middle">2</text>
+  <circle cx="264.2" cy="43.0" r="3.4" fill="#039d00"></circle>
+  <circle cx="300.2" cy="43.0" r="3.3" fill="#039d00"></circle>
+  <circle cx="372.2" cy="43.0" r="5.6" fill="#039d00"></circle>
+  <text  x="372.2" y="34.0" text-anchor="middle">49</text>
+  <circle cx="457.5" cy="43.0" r="3.4" fill="#039d00"></circle>
+  <circle cx="549.3" cy="43.0" r="5.1" fill="#039d00"></circle>
+  <text  x="549.3" y="34.0" text-anchor="middle">97</text>
+  <circle cx="645.2" cy="43.0" r="3.3" fill="#039d00"></circle>
+  <circle cx="715.2" cy="43.0" r="4.7" fill="#039d00"></circle>
+  <circle cx="825.6" cy="43.0" r="3.3" fill="#039d00"></circle>
+  <circle cx="888.3" cy="43.0" r="4.1" fill="#039d00"></circle>
+  <text x="180" y="73.0" text-anchor="end">Echoing Blade</text>
+  <line x1="192" y1="69.0" x2="962" y2="69.0" ></line>
+  <circle cx="215.7" cy="69.0" r="5.9" fill="#9d0a00"></circle>
+  <text  x="215.7" y="60.0" text-anchor="middle">6</text>
+  <circle cx="310.1" cy="69.0" r="5.9" fill="#9d0a00"></circle>
+  <text  x="310.1" y="60.0" text-anchor="middle">32</text>
+  <circle cx="414.8" cy="69.0" r="5.6" fill="#9d0a00"></circle>
+  <text  x="414.8" y="60.0" text-anchor="middle">61</text>
+  <circle cx="529.0" cy="69.0" r="5.2" fill="#9d0a00"></circle>
+  <text  x="529.0" y="60.0" text-anchor="middle">92</text>
+  <circle cx="571.9" cy="69.0" r="3.3" fill="#9d0a00"></circle>
+  <circle cx="624.3" cy="69.0" r="5.0" fill="#9d0a00"></circle>
+  <text  x="624.3" y="60.0" text-anchor="middle">118</text>
+  <circle cx="731.5" cy="69.0" r="4.8" fill="#9d0a00"></circle>
+  <text  x="731.5" y="60.0" text-anchor="middle">147</text>
+  <circle cx="826.7" cy="69.0" r="4.3" fill="#9d0a00"></circle>
+  <circle cx="929.2" cy="69.0" r="3.8" fill="#9d0a00"></circle>
+  <text x="180" y="99.0" text-anchor="end">Slice Through Reality</text>
+  <line x1="192" y1="95.0" x2="962" y2="95.0" ></line>
+  <circle cx="235.5" cy="95.0" r="5.9" fill="#7fdefd"></circle>
+  <text  x="235.5" y="86.0" text-anchor="middle">12</text>
+  <circle cx="336.5" cy="95.0" r="3.3" fill="#7fdefd"></circle>
+  <circle cx="503.7" cy="95.0" r="5.2" fill="#7fdefd"></circle>
+  <text  x="503.7" y="86.0" text-anchor="middle">85</text>
+  <circle cx="751.5" cy="95.0" r="4.7" fill="#7fdefd"></circle>
+  <text x="180" y="125.0" text-anchor="end">Excision Extremis</text>
+  <line x1="192" y1="121.0" x2="962" y2="121.0" ></line>
+  <circle cx="255.4" cy="121.0" r="5.8" fill="#edc836"></circle>
+  <text  x="255.4" y="112.0" text-anchor="middle">17</text>
+  <circle cx="391.1" cy="121.0" r="6.0" fill="#edc836"></circle>
+  <text  x="391.1" y="112.0" text-anchor="middle">54</text>
+  <circle cx="501.1" cy="121.0" r="3.3" fill="#edc836"></circle>
+  <circle cx="565.3" cy="121.0" r="5.2" fill="#edc836"></circle>
+  <text  x="565.3" y="112.0" text-anchor="middle">102</text>
+  <circle cx="644.1" cy="121.0" r="5.0" fill="#edc836"></circle>
+  <text  x="644.1" y="112.0" text-anchor="middle">123</text>
+  <circle cx="709.7" cy="121.0" r="3.3" fill="#edc836"></circle>
+  <circle cx="739.8" cy="121.0" r="3.3" fill="#edc836"></circle>
+  <circle cx="776.5" cy="121.0" r="4.7" fill="#edc836"></circle>
+  <circle cx="852.0" cy="121.0" r="4.2" fill="#edc836"></circle>
+  <circle cx="947.3" cy="121.0" r="3.9" fill="#edc836"></circle>
+  <text x="180" y="151.0" text-anchor="end">Prob. Distribution</text>
+  <line x1="192" y1="147.0" x2="962" y2="147.0" ></line>
+  <circle cx="284.0" cy="147.0" r="5.7" fill="#ED6936"></circle>
+  <text  x="284.0" y="138.0" text-anchor="middle">25</text>
+  <circle cx="342.9" cy="147.0" r="3.4" fill="#ED6936"></circle>
+  <circle cx="384.9" cy="147.0" r="3.3" fill="#ED6936"></circle>
+  <circle cx="440.2" cy="147.0" r="5.4" fill="#ED6936"></circle>
+  <text  x="440.2" y="138.0" text-anchor="middle">68</text>
+  <circle cx="589.1" cy="147.0" r="5.0" fill="#ED6936"></circle>
+  <text  x="589.1" y="138.0" text-anchor="middle">108</text>
+  <circle cx="689.9" cy="147.0" r="3.3" fill="#ED6936"></circle>
+  <circle cx="799.2" cy="147.0" r="4.4" fill="#ED6936"></circle>
+  <circle cx="890.5" cy="147.0" r="3.3" fill="#ED6936"></circle>
+  <text x="180" y="177.0" text-anchor="end">Division Eternal</text>
+  <line x1="192" y1="173.0" x2="962" y2="173.0" ></line>
+  <circle cx="291.4" cy="173.0" r="5.8" fill="#9d0a00"></circle>
+  <text  x="291.4" y="164.0" text-anchor="middle">27</text>
+  <circle cx="358.5" cy="173.0" r="6.0" fill="#9d0a00"></circle>
+  <text  x="358.5" y="164.0" text-anchor="middle">45</text>
+  <circle cx="457.1" cy="173.0" r="6.0" fill="#9d0a00"></circle>
+  <text  x="457.1" y="164.0" text-anchor="middle">72</text>
+  <circle cx="596.4" cy="173.0" r="5.0" fill="#9d0a00"></circle>
+  <text  x="596.4" y="164.0" text-anchor="middle">110</text>
+  <circle cx="695.1" cy="173.0" r="6.0" fill="#9d0a00"></circle>
+  <text  x="695.1" y="164.0" text-anchor="middle">137</text>
+  <circle cx="806.9" cy="173.0" r="4.5" fill="#9d0a00"></circle>
+  <circle cx="893.4" cy="173.0" r="4.9" fill="#9d0a00"></circle>
+  <text  x="893.4" y="164.0" text-anchor="middle">191</text>
+</svg>
