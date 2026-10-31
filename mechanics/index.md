@@ -313,7 +313,48 @@ Graphic adapted from [elisethechemist's Vloxx Field Guide](https://elisethechemi
 
 ### 10% - 0% - Perfect Form
 
+#### Opening
+{: .no_toc}
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    greens("`<img class='medium greens'> Greens`")
+    curse("`<img class='medium curse'> Surrounding Curse`")
+    spears("`<img class='medium spears'> Raging Storm`")
+    geometry("`<img class='medium geometry'> Excision Extremis`")
+    pools("`<img class='medium pools'> Pools`")
+
+    greens --> curse
+    curse --> spears
+    spears --> geometry
+    geometry --> pools
+
+    click greens "#judgement-of-eternity"
+    click pools "#probability-distribution"
+    click geometry "#excision-extremis"
+    click spears "#raging-storm"
+    click curse "#surrounding-curse"
+```
+{: .center}
+
 At the beginning of this phase, Vloxx will transition into his final form. He will then cast [Threshold of Eternity], which kills all players 2 minutes after the beginning of the phase. During this cast, Vloxx will constantly cycle through a [subset of skills](#attacks-included) from all previous phases of the encounter.
+
+Unlike the rest of the encounter, the order of mechanics in this phase is 100% consistent since Vloxx's behaviour no longer depends on skill cooldowns and priority, but on a set order determined by [Threshold of Eternity].
+
+<details>
+<summary><b>Full Timeline</b></summary>
+<div markdown=block>
+<img src='./timelines/phase4.svg'>
+
+<div markdown=block class=subtext>
+Graphic inspired by [elisethechemist's Vloxx Field Guide](https://elisethechemist.com/INT/Vloxx_CM_Field_Guide_dark.html) and built with research from arcdps logs.
+</div>
+
+</div>
+</details>
 
 ---
 
@@ -447,7 +488,7 @@ The squad is divided into a *melee* group and a *ranged* group. One player from 
 
 <img class='center' width='45%' src='./greens/green-strategy-subs.webp'>
 
-The mechanic is solved by having the <img class='inline fixate-icon'> [Fixate] stack with the healers, while all four player from the *melee* group try to bait a green. This should result in two of them getting targeted: one of them will then move over to the ranged group. This way, all three groups will have a green.
+The mechanic is solved by having the <img class='inline fixate-icon'> [Fixate] stack with the healers, while all four player from the *melee* group try to bait a green. This should result in two of them getting targeted, one of which will then move over to the ranged group. This way, all three groups will have a green.
 
 <img class='center' width='90%' src='./greens/green-strategy-subs-1.webp'>
 
@@ -691,7 +732,7 @@ Spears are projectiles and thus affected by projectile disruption.
 
 #### Final Phase
 {: .no_toc}
-In [phase 4], the behaviour of this skill changes slightly. Instead of launching one spear per second, Vloxx will launch eight barrages of three or six spears every three seconds.
+In [phase 4], the behaviour of this skill changes. Instead of launching one spear per second, Vloxx will continuously launch barrages of two, three or six spears every three seconds. This will continue without interruption from the first cast until Vloxx is defeated.
 
 {: .legendary}
 Spears are no longer affected by projectile disruption during the final phase.
@@ -959,19 +1000,23 @@ If the attack is allowed to complete, 67 seconds after Vloxx becomes invulnerabl
 
 This attack is used by Vloxx at the beginning of the 10% phase. He begins by becoming <img class='inline invuln'> [Invulnerable] while changing to his final form over the course of 15 seconds, upon which he becomes vulnerable once more.
 
-While this transformation is ongoing, he will start casting a combination of attacks from all three phases.
+During this attack, he will continuously channel while casting skills from all previous phases of the encounter. Upon completing the channel 124 seconds after the beginning of the phase, he will instantly defeat all players.
 
 #### Attacks Included
 {: .no_toc .center}
 
-|**General Attacks**| [Judgement of Eternity], [Probability Distribution] |
-|**Staff Attacks**| [Surrounding Curse] |
-|**Spear Attacks**| [Raging Storm] |
-|**Sword Attacks**| [Excision Extremis] |
+| **Attack** | **First Cast** [s] | **Cooldown** [s] |
+| [Judgement of Eternity] | 3 | 30 |
+| [Surrounding Curse] | 13 | 10 |
+| [Raging Storm] | 15 | 3 |
+| [Excision Extremis] | 18 | 15 |
+| [Probability Distribution] | 23 | 20 |
 
-These mechanics rotate continuously until the boss is dead.
+<img src='./timelines/phase4.svg'>
 
-This attack will also start a timer which overrides the enrage for the fight, shortening it to two minutes if there was more time available. If this timer runs out, Vloxx will instantly defeat all players.
+<div markdown=block class=subtext>
+Graphic inspired by [elisethechemist's Vloxx Field Guide](https://elisethechemist.com/INT/Vloxx_CM_Field_Guide_dark.html) and built with research from arcdps logs.
+</div>
 
 <img class=divider>
 
