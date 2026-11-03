@@ -93,9 +93,7 @@ Vloxx is fully mobile and makes use of both skills and normal movement to reposi
 
 These are diametrically opposite effects that have a huge impact on the encounter.
 
-<img class='inline empowered'> [Empowered], similar to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), increases Vloxx's outgoing damage, and is gained whenever players fail mechanics. However, unlike these encounters, it also *reduces* incoming damage, making it vastly more dangerous. Furthermore, Vloxx will passively gain this effect from any living [Champion Weapons](#weapons), additionally gaining 10 <img class='inline empowered'> stacks whenever the boss transitions out of a split phase.
-
-When this mechanic is mismanaged, the group will start dealing increasingly less damage as the fight progresses, as mechanics in the later phases will become dangerously difficult to out-heal.
+<img class='inline empowered'> [Empowered], similar to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), increases Vloxx's outgoing damage, and is gained whenever players fail mechanics. However, unlike these encounters, it also *reduces* incoming damage, making it vastly more dangerous, and the boss will passively gain it from several sources, making it impossible to prevent him from acquiring a certain number of stacks.
 
 The only way to curb this effect is through its opposing mechanic, <img class='inline ascension'> [Ascension]. This is a buff applied to players, stacking up to 10. Losing any amount of <img class='inline ascension'> [Ascension] results in the boss gaining the same amount of <img class='inline empowered'> [Empowered], but the opposite is also true: gaining <img class='inline ascension'> [Ascension] is the only way of reducing <img class='inline empowered'> [Empowered].
 
@@ -130,7 +128,7 @@ flowchart TD
 ```
 {: .center}
 
-The only source of <img class='inline ascension'> [Ascension] is breaking the <img class='inline defiance'> [Defiance Bar] of any [Champion Weapons](#weapons) once they reach 25% of their maximum HP. Therefore, the encounter  mandates a large amount of cleave and careful positioning to both reduce the time that weapons spend alive and provide a steady source of <img class='inline ascension'> [Ascension] to offset the boss' passive <img class='inline empowered'> [Empowered] gains.
+The only source of <img class='inline ascension'> [Ascension] is [Champion Weapons](#weapons): a maximum of three stacks can be gained from each by breaking their <img class='inline defiance'> [Defiance Bar] once they reach 25% maximum HP. The encounter therefore mandates a large amount of cleave and careful positioning to both reduce the time that weapons spend alive and provide a steady source of <img class='inline ascension'> [Ascension] to offset the boss' passive <img class='inline empowered'> [Empowered] gains.
 
 ---
 
@@ -138,7 +136,7 @@ The only source of <img class='inline ascension'> [Ascension] is breaking the <i
 
 Much of Vloxx's skill targeting is based on the fixation mechanic. Vloxx will select a <img class='inline fixate-icon'> [Fixated] player at the beginning of the fight, who then becomes the focus of most of his mechanics. Vloxx will then periodically swap his target to another random player.
 
-The random nature of this mechanics means that players have to be ready to improvise and reposition rapidly in response to changes, especially when dealing with [Judgement of Eternity] and [Excision Extremis], which can both potentially end a run if mismanaged.
+The random nature of this selection means that players have to be ready to improvise and reposition rapidly in response to changes, especially when dealing with [Judgement of Eternity] and [Excision Extremis], which can both potentially end a run if mismanaged.
 
 ---
 
