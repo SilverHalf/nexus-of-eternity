@@ -486,7 +486,7 @@ The squad is divided into a *melee* group and a *ranged* group. One player from 
 
 <img class='center' width='45%' src='./greens/green-strategy-subs.webp'>
 
-The mechanic is solved by having the <img class='inline fixate-icon'> [Fixate] stack with the healers, while all four player from the *melee* group try to bait a green. This should result in two of them getting targeted, one of which will then move over to the ranged group. This way, all three groups will have a green.
+The mechanic is solved by having the <img class='inline fixate-icon'> [Fixate] stack with the healers, while all four players from the *melee* group try to bait a green. This should result in two of them getting targeted, one of which will then move over to the ranged group. This way, all three groups will have a green.
 
 <img class='center' width='90%' src='./greens/green-strategy-subs-1.webp'>
 
