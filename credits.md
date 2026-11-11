@@ -12,6 +12,7 @@ nav_order: 100
 ## Credits
 - Icons and skill information are referenced from the [Guild Wars 2 Wiki](https://wiki.guildwars2.com/).
 - Miniboss images and icons were taken from [Elite Insights](https://github.com/baaron4/GW2-Elite-Insights-Parser).
+- The strategy guide is based off of <img class='inline youtube'> [this video](https://www.youtube.com/watch?v=NNYx8mR8HwI) by *Wolf*.
 - [Narokath's Excision Simulator](https://narokath.github.io/vloxx-guide/excision-simulator.html) was used to make some animations for the mechanics section.
 - Phase timelines are sourced from [elisethechemist's Vloxx Field Guide](https://elisethechemist.com/INT/Vloxx_CM_Field_Guide_dark.html).
 - [*Stina*](https://stina.tiiny.site/) made the site icon and favicon.
@@ -19,4 +20,4 @@ nav_order: 100
 
 A big thank you to everyone who gave feedback on this guide and helped make it what it currently is:
 
-*Bear, Spencer, Stina, Wolf*
+*Bear, Mike, Spencer, Stina, Wolf*
