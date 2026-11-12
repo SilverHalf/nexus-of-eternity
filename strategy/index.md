@@ -126,6 +126,25 @@ In the final phase, [Raging Storm] lasts for the entire phase. This requires per
 
 ## Composition
 
+Groups attempting to clear the Nexus of Eternity will benefit from a large amount of defensive utility. Groups will benefit from having:
+
+- *Projectile Negation*: permanent coverage for CM, or at least 20 seconds of continuous duration for LCM.
+- <img class='inline stability'> [Stability]: multiple stacks on a medium cooldown.
+- Group <img class='inline stunbreak'> [Stunbreak]: on a medium-long cooldown.
+- <img class='inline superspeed'> [Superspeed]: very useful since the encounter has a lot of movement.
+- *Cleave*: to manage [Champion Weapons] and split phases efficiently.
+- *Crowd Control*: necessary for [Champion Weapons], [Champion Elementals] and for Vloxx's large <img class='inline defiance'> [Defiance Bar] after every split phase.
+- High *Survivability* and *Healing*: the boss will start dealing obscene damage towards the end of the fight due to <img class='inline empowered'> [Empowered].
+- *Condition Cleanse*: most of Vloxx's attacks apply some form of damaging or debilitating condition.
+
+By looking at this daunting list of requirements, one can understand why <img class='inline troubadour'> [Troubadour] is the ubiquitous healer on this encounter. Its strong healing output, large boon radius and incredible defensive utility with skills such as <img class='inline rogue'> [Tale of the Honorable Rogue], <img class='inline marshal'> [Tale of the Valiant Marshal] and <img class='inline august-queen'> [Tale of the August Queen] make it stand head and shoulders above any other defensive supports for the Nexus of Eternity. It can also run with a [Celestial] build to improve damage output at the cost of some healing.
+
+As a result of <img class='inline troubadour'> [Troubadour]'s dominance, boon supports will almost always bring <img class='inline alacrity'> [Alacrity]. Common picks include <img class='inline evoker'> [Evoker], <img class='inline luminary'> [Luminary] and <img class='inline amalgam'> [Amalgam]. <img class='inline specter'> [Specter] is also a viable pick as it provides large amounts of CC when running spear, but is not as common due to its significant damage handicap compared to its alternatives.
+
+Common strategies cover projectile negation by running at least three <img class='inline scourge'> [Scourges] with <img class='inline cpc'> [Corrosive Poison Cloud] (two in Legendary Mode). These can also bring additional strong utility for the encounter, such as <img class='inline epidemic'> [Epidemic] and large amounts of condition cleanse. Alternatively, some groups will run a heal <img class='inline vindicator'> [Vindicator] to cover projectile negation on its own, pairing it with a [Celestial] <img class='inline troubadour'> [Troubadour].
+
+The encounter generally favours *condition damage*, since phases are long and conditions will keep ticking on the boss for some time after the beginning of each split phase. Condition builds also have the advantage of of being able to run [Trailblazer] prefix gear, granting them massively improved survivability for a moderate DPS loss.
+
 <img class=divider>
 
 ## First Phase
@@ -178,12 +197,22 @@ In the final phase, [Raging Storm] lasts for the entire phase. This requires per
 <!-- Links to classes and specializations -->
 [Vindicator]: https://wiki.guildwars2.com/wiki/Vindicator
 [Necromancers]: https://wiki.guildwars2.com/wiki/Necromancer
+[Troubadour]: https://wiki.guildwars2.com/wiki/Troubadour
+[Evoker]: https://wiki.guildwars2.com/wiki/Evoker
+[Luminary]: https://wiki.guildwars2.com/wiki/Luminary
+[Amalgam]: https://wiki.guildwars2.com/wiki/Amalgam
+[Specter]: https://wiki.guildwars2.com/wiki/Specter
+[Scourge]: https://wiki.guildwars2.com/wiki/Scourge
+[Scourges]: https://wiki.guildwars2.com/wiki/Scourge
 
 <!-- Links to player skills -->
 [Feedback]: https://wiki.guildwars2.com/wiki/Feedback
 [Corrosive Poison Cloud]: https://wiki.guildwars2.com/wiki/Corrosive_Poison_Cloud
 [We Will Never Yield!]: https://wiki.guildwars2.com/wiki/%22We_Will_Never_Yield!%22
+[Tale of the Honorable Rogue]: https://wiki.guildwars2.com/wiki/Tale_of_the_Honorable_Rogue
+[Tale of the Valiant Marshal]: https://wiki.guildwars2.com/wiki/Tale_of_the_Valiant_Marshal
 [Tale of the August Queen]: https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen
+[Epidemic]: https://wiki.guildwars2.com/wiki/Epidemic
 
 <!-- Links to buffs and debuffs -->
 [Downstating]: https://wiki.guildwars2.com/wiki/Downstate
@@ -212,15 +241,19 @@ In the final phase, [Raging Storm] lasts for the entire phase. This requires per
 [Bleeding]: https://wiki.guildwars2.com/wiki/Bleeding
 [Superspeed]: https://wiki.guildwars2.com/wiki/Superspeed
 [Aegis]: https://wiki.guildwars2.com/wiki/Aegis
+[Alacrity]: https://wiki.guildwars2.com/wiki/Alacrity
 
 <!-- Links to enemies and enemy skills -->
-[Champion Staff]: #weapons
-[Champion Spear]: #weapons
-[Champion Sword]: #weapons
-[Champion Weapons]: #weapons
-[Champion Elemental]: #elementals
-[Elite Elementals]: #elementals
+[Champion Staff]: ../mechanics/index.html#weapons
+[Champion Spear]: ../mechanics/index.html#weapons
+[Champion Sword]: ../mechanics/index.html#weapons
+[Champion Weapons]: ../mechanics/index.html#weapons
+[Champion Elemental]: ../mechanics/index.html#elementals
+[Champion Elementals]: ../mechanics/index.html#elementals
+[Elite Elementals]: ../mechanics/index.html#elementals
 
 <!-- Other -->
 [Defiance Bar]: https://wiki.guildwars2.com/wiki/Defiance_bar
 [Stunbreak]: https://wiki.guildwars2.com/wiki/Stun_break
+[Trailblazer]: https://wiki.guildwars2.com/wiki/Trailblazer's
+[Celestial]: https://wiki.guildwars2.com/wiki/Celestial

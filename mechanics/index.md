@@ -458,7 +458,7 @@ Greens have a maximum range of 3000 units. The number of greens in this mechanic
 #### Strategy (Anchors)
 {: .no_toc}
 
-The squad is divided into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, representing the location where the group will stack inside a green. The *anchors* for the side groups act as *green baiters*, and attempt to stand  close to the boss to get targeted by a green. The tenth person is usually called the *joker* or the *float*. 
+The squad is divided into three groups of three people, usually called *left*, *mid* and *right*. Each group will have an *anchor*, a player that represents the location where the group will stack inside a green. The *anchors* for the side groups act as *green baiters*, and stand close to the boss to bait a green. The tenth person is usually called the *joker* or the *float*. 
 
 <img class='center' width='60%' src='./greens/green-strategy.webp'>
 
