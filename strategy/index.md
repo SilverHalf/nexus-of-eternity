@@ -23,9 +23,9 @@ The standard strategy for the Nexus of Eternity focuses on precise positioning a
 
 #### Main Points
 {: .no_toc}
-- A large amount of defensive utility is required to manage Vloxx's especially large variety of attacks. Projectile deflection in particular is a common failure point.
+- A large amount of defensive utility is required to manage Vloxx's large variety of attacks. Projectile deflection in particular is a common failure point.
 - Groups must constantly cleave [Champion Weapons] to counteract Vloxx's passive <img class='inline empowered'> [Empowered] gain.
-- The boss will randomly select a <img class='inline fixate-icon'> [Fixate] to focus with mechanics. This requires groups to react and improvise on the fly based on the selection.
+- The boss will randomly select a <img class='inline fixate-icon'> [Fixate] to focus with mechanics. This requires groups to quickly react based on the target, especially for [solving greens](#solving-greens) and [opposition tanking]().
 
 <img class=divider>
 
@@ -62,17 +62,22 @@ flowchart LR
 
 ```
 {: .center}
-As a result, all three phases play quite differently, as the squad will have to deal with different mechanics in each.
+As a result, all four phases play quite differently, as the squad will have to deal with different mechanics in each:
+
+- The [Staff Phase] concentrates on positioning to facilitate cleaving the [Champion Staff].
+- The [Spear Phase] has a large focus on projectile disruption and the overlap between [Worldpiercer] and [Cosmic Charge] with [Greens].
+- The [Sword Phase] emphasizes <img class='inline fixate-icon'> [Fixate] positioning to manage the huge incoming damage from [Excision Extremis].
+- The [Final Phase] combines attacks from all previous phases, and is played differently depending on whether the encounter is in Challenge or Legendary mode.
 
 ---
 
 ### <img class='inline empowered'> Empowered and Weapon Management
 
-Vloxx, similarly to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), will *actively* gain <img class='inline empowered'> [Empowered] stacks whenever players fail mechanics. Unlike these other encounters, however, Vloxx also has several sources of *passive* gain. Left alone, these sources will gradually cause the encounter to fail, as the boss will start dealing prohibitive amounts of damage while taking very little.
+Vloxx, similarly to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), will *actively* gain <img class='inline empowered'> [Empowered] stacks whenever players fail mechanics. However, unlike these other encounters, Vloxx also has several sources of *passive* gain. Left alone, the boss will gradually accumulate <img class='inline empowered'> [Empowered] until the squad wipes, either due to damage or via enrage.
 
-The only way to counteract <img class='inline empowered'> [Empowered] is through <img class='inline ascension'> [Ascension], and the only way to gain <img class='inline ascension'> [Ascension] is through [Champion Weapons]: a maximum of three stacks can be gained from each by breaking their <img class='inline defiance'> [Defiance Bar] once they reach 25% maximum HP.
+As a result, it is not sufficient to play the encounter without failing mechanics: groups are forced to actively reduce the number of <img class='inline empowered'> stacks on the boss by engaging with the <img class='inline ascension'> [Ascension] mechanic. This results in significant strategic considerations in order to efficiently aggro any [Champion Weapons] to the boss, cleave them down and CC them.
 
-This results in significant strategic considerations: groups must position carefully to aggro any weapons onto the boss, and must bring large amounts of cleave to kill them quickly. When done correctly, this results in them surviving for less (and thus granting fewer <img class='inline empowered'> [Empowered]) and provides a steady source of <img class='inline ascension'> [Ascension] to offset any other gains.
+When done correctly, this results in weapons granting fewer <img class='inline empowered'> [Empowered] and provides a steady source of <img class='inline ascension'> [Ascension] to offset any other gains.
 
 ---
 
@@ -84,7 +89,8 @@ Two common strategies exist for this mechanic:
 - [Anchor Greens](../mechanics/index.html#strategy-anchors) assigns two players, called *anchors*, to bait the mechanic.
 - [Subgroup Greens](../mechanics/index.html#strategy-subgroups) has four people (an entire subgroup minus the healer) bait the greens.
 
-Both strategies are viable and commonly used.
+{: .note}
+Click on the links above to view in-depth descriptions for both strategies.
 
 <div class="alt-row-container">
 <div class="strategy bordered" markdown=block>
@@ -122,11 +128,37 @@ In phase 2, [Raging Storm] requires at least 20 seconds of continuous coverage t
 
 In the final phase, [Raging Storm] lasts for the entire phase. This requires permanent projectile reflection (outside of legendary mode), which can again be done with a solo bubble. Alternatively, have three <img class='inline necromancer'> [Necromancers] rotate casts of <img class='inline cpc'> [Corrosive Poison Cloud]. With the proper timing, this skill can be re-cast off cooldown to provide permanent coverage for the main stack, freeing up <img class='inline feedback'> [Feedback] for the side groups during greens.
 
+---
+
+### Markers
+
+Markers are commonly used in order to highlight specific positions in the arena:
+
+- <img class='inline arrow'> is used to show the [Champion Staff]'s spawn position.
+- <img class='inline circle'> highlights the position the <img class='inline fixate-icon'> [Fixate] has to stack on at the beginning of the [Spear Phase].
+- <img class='inline triangle'> is used to highlight the stacking position for the final phase.
+- <img class='inline heart'> and <img class='inline square'> are purposely not used, as these markers are often given to the *anchors*.
+
+This guide will use these positions as a reference for the strategy.
+
+<details>
+<summary>Download Markers</summary>
+<div markdown=block>
+The following code can be pasted into the [Commander Markers](https://blishhud.com/modules/?module=Manlaan.CommanderMarkers) module for [Blish HUD](https://blishhud.com).
+```
+eyJlbmFibGVkIjp0cnVlLCJuYW1lIjoiTWFya2VycyIsImRlc2NyaXB0aW9uIjoiZGVzY3JpcHRpb24iLCJtYXBJZCI6MTYzOCwidHJpZ2dlciI6eyJ4IjowLjAsInkiOjAuMCwieiI6MC4wfSwibWFya2VycyI6W3siaSI6MiwiZCI6Im1hcmtlciBuYW1lIiwieCI6MzA3LjU2ODEsInkiOjM5NS40NzcwODEsInoiOjMxNC44ODA0NjN9LHsiaSI6MSwiZCI6bnVsbCwieCI6MzAxLjA3MTc3NywieSI6NDA4LjYxNiwieiI6MzE0LjgzNzM3Mn0seyJpIjo2LCJkIjpudWxsLCJ4IjozMDcuNTY4MSwieSI6Mzk1LjQ3NzA4MSwieiI6MzE0Ljg4MDQ2M30seyJpIjo1LCJkIjpudWxsLCJ4IjozMDcuNTU3NjQ4LCJ5IjozOTUuNzE3MywieiI6MzE0Ljg1NTEzM30seyJpIjo3LCJkIjpudWxsLCJ4IjozMDIuMDE2NTcxLCJ5IjozODguODAxMDU2LCJ6IjozMTQuODM3NDMzfSx7ImkiOjMsImQiOm51bGwsIngiOjIxNy4yMzY0NSwieSI6NDAxLjA5NDIsInoiOjMxNC4xNDcyNDd9LHsiaSI6NCwiZCI6bnVsbCwieCI6MjE4LjA5MDI0LCJ5IjozOTEuMTM2NywieiI6MzE0LjI1NX0seyJpIjo4LCJkIjpudWxsLCJ4IjoyMDguMTg1MDg5LCJ5IjozOTUuNDU1MzIyLCJ6IjozMTQuMDQ5MTY0fV19
+```
+
+Alternatively, you can download a marker pack for [TaimiHUD](https://taimihud.com/) [here](./vloxx.markers).
+</div>
+</details>
+
+
 <img class=divider>
 
 ## Composition
 
-Groups attempting to clear the Nexus of Eternity will benefit from a large amount of defensive utility. Groups will benefit from having:
+Groups attempting to clear the Nexus of Eternity will benefit from a large amount of defensive utility, including:
 
 - *Projectile Negation*: permanent coverage for CM, or at least 20 seconds of continuous duration for LCM.
 - <img class='inline stability'> [Stability]: multiple stacks on a medium cooldown.
@@ -137,13 +169,13 @@ Groups attempting to clear the Nexus of Eternity will benefit from a large amoun
 - High *Survivability* and *Healing*: the boss will start dealing obscene damage towards the end of the fight due to <img class='inline empowered'> [Empowered].
 - *Condition Cleanse*: most of Vloxx's attacks apply some form of damaging or debilitating condition.
 
-By looking at this daunting list of requirements, one can understand why <img class='inline troubadour'> [Troubadour] is the ubiquitous healer on this encounter. Its strong healing output, large boon radius and incredible defensive utility with skills such as <img class='inline rogue'> [Tale of the Honorable Rogue], <img class='inline marshal'> [Tale of the Valiant Marshal] and <img class='inline august-queen'> [Tale of the August Queen] make it stand head and shoulders above any other defensive supports for the Nexus of Eternity. It can also run with a [Celestial] build to improve damage output at the cost of some healing.
+By looking at this daunting list of requirements, one can understand why <img class='inline troubadour'> [Troubadour] is the ubiquitous healer on this encounter. Its strong healing output, large boon radius and incredible defensive utility with skills such as <img class='inline rogue'> [Tale of the Honorable Rogue], <img class='inline marshal'> [Tale of the Valiant Marshal] and <img class='inline august-queen'> [Tale of the August Queen] make it stand head and shoulders above any other defensive support. It can also run with a [Celestial] build to improve damage output at the cost of some healing power.
 
 As a result of <img class='inline troubadour'> [Troubadour]'s dominance, boon supports will almost always bring <img class='inline alacrity'> [Alacrity]. Common picks include <img class='inline evoker'> [Evoker], <img class='inline luminary'> [Luminary] and <img class='inline amalgam'> [Amalgam]. <img class='inline specter'> [Specter] is also a viable pick as it provides large amounts of CC when running spear, but is not as common due to its significant damage handicap compared to its alternatives.
 
-Common strategies cover projectile negation by running at least three <img class='inline scourge'> [Scourges] with <img class='inline cpc'> [Corrosive Poison Cloud] (two in Legendary Mode). These can also bring additional strong utility for the encounter, such as <img class='inline epidemic'> [Epidemic] and large amounts of condition cleanse. Alternatively, some groups will run a heal <img class='inline vindicator'> [Vindicator] to cover projectile negation on its own, pairing it with a [Celestial] <img class='inline troubadour'> [Troubadour].
+Common strategies cover projectile negation by running at least three <img class='inline scourge'> [Scourges] with <img class='inline cpc'> [Corrosive Poison Cloud] (two in Legendary Mode). These also bring additional utility for the encounter, such as <img class='inline epidemic'> [Epidemic] and large amounts of condition cleanse. Alternatively, some groups will run a heal <img class='inline vindicator'> [Vindicator] to cover projectile negation on its own, pairing it with a [Celestial] <img class='inline troubadour'> [Troubadour].
 
-The encounter generally favours *condition damage*, since phases are long and conditions will keep ticking on the boss for some time after the beginning of each split phase. Condition builds also have the advantage of of being able to run [Trailblazer] prefix gear, granting them massively improved survivability for a moderate DPS loss.
+The encounter generally favours *condition damage*, since phases are long and conditions will keep ticking on the boss for some time after the beginning of each split phase. Condition builds also have the advantage of [Trailblazer] prefix gear, granting them massively improved survivability for a moderate DPS loss.
 
 <img class=divider>
 
@@ -190,9 +222,13 @@ The encounter generally favours *condition damage*, since phases are long and co
 [Fixated]: ../mechanics/index.html#-fixate
 
 [Phase 1]: #first-phase
+[Staff Phase]: #first-phase
 [Phase 2]: #second-phase
+[Spear Phase]: #second-phase
 [Phase 3]: #third-phase
+[Sword Phase]: #third-phase
 [Phase 4]: #final-phase
+[Final Phase]: #final-phase
 
 <!-- Links to classes and specializations -->
 [Vindicator]: https://wiki.guildwars2.com/wiki/Vindicator

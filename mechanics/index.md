@@ -273,7 +273,7 @@ flowchart LR
     classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
 
     greens("`<img class='medium greens'> Greens`")
-    circle("`<img class='medium circle'> Echoing Blade`")
+    circle("`<img class='medium swords'> Echoing Blade`")
     port("`<img class='medium port'> Slice Through Reality`")
     geometry("`<img class='medium geometry'> Excision Extremis`")
     pools("`<img class='medium pools'> Pools`")
@@ -414,7 +414,7 @@ Players *lose* <img class='inline ascension'> stacks whenever they fail certain 
 
 Whenever a player loses <img class='inline ascension'> stacks, Vloxx will gain the same number of <img class='inline empowered'> [Empowered].
 
-Players will *gain* <img class='inline ascension'> stacks whenever they pick up *orbs*. Three of these drop from [Champion Weapons](#weapons) whenever their <img class='inline defiance'> [Defiance Bar] is broken.
+Players will *gain* <img class='inline ascension'> stacks whenever they pick up *orbs*. Three of these drop from [Champion Weapons](#weapons) when their <img class='inline defiance'> [Defiance Bar] is broken. Players cannot gain more than 10 stacks of <img class='inline ascension'> [Ascension], however players at the cap can still pick up orbs to reduce <img class='inline empowered'> [Empowered] on Vloxx.  
 
 ---
 
@@ -1061,7 +1061,7 @@ Spawns at the beginning of the second split phase (40%). Can use the skills: [Di
 | **Armor** | 2597 (standard) |
 | **Hitbox** | 100 (small) |
 
-Champion weapons spawn in before the main phase associated with their form. When killed, they will respawn 40 seconds later. They will always spawn and respawn at the same locations in the arena.
+Champion weapons spawn in before the main phase associated with their form. When killed, they will respawn 40 seconds later as long as there is at least one stack of <img class='inline empowered'> [Empowered] on the boss. They will always spawn and respawn at the same locations in the arena.
 
 <img class=center width="60%" src='./weapon-spawns.webp'>
 
