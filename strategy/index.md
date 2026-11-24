@@ -17,21 +17,22 @@ nav_order: 3
 </div>
 </details>
 
-The standard strategy for the Nexus of Eternity focuses on precise positioning and defensive utility to manage the consistent stream of enemies and counteract the various dangerous mechanics that characterize the encounter.
+The standard strategy for the Nexus of Eternity focuses on precise positioning and well-timed defensive utility. This guide is a written version of this <img class='inline youtube'> [video guide](https://www.youtube.com/watch?v=NNYx8mR8HwI) by *Wolf*.
 
 ---
 
 #### Main Points
 {: .no_toc}
-- A large amount of defensive utility is required to manage Vloxx's large variety of attacks. Projectile deflection in particular is a common failure point.
+- A large amount of defensive utility is required to manage Vloxx's attack variety. Projectile management and <img class='inline stability'> [Stability] are common failure points.
+- Vloxx deals a great amount of damage, which increases as the fight goes on. Proper healing and defensive capabilities are essential.
 - Groups must constantly cleave [Champion Weapons] to counteract Vloxx's passive <img class='inline empowered'> [Empowered] gain.
-- The boss will randomly select a <img class='inline fixate-icon'> [Fixate] to focus with mechanics. This requires groups to quickly react based on the target, especially for [solving greens](#solving-greens) and [opposition tanking]().
+- Vloxx randomly selects a <img class='inline fixate-icon'> [Fixate] to focus with mechanics. This forces groups to adapt based on the target, especially for [solving greens](#solving-greens) and [opposition tanking]().
 
 <img class=divider>
 
 ## General Information
 
-Vloxx as an enemy has a large selection of attacks, which is then narrowed down to a smaller number based on the specific phase of the encounter:
+Vloxx as an enemy has a large selection of attacks. However, he only has access to a subset of these at any time depending on his equipped weapon, which in turn depends on the phase of the encounter.
 
 ```mermaid
 flowchart LR
@@ -62,7 +63,7 @@ flowchart LR
 
 ```
 {: .center}
-As a result, all four phases play quite differently, as the squad will have to deal with different mechanics in each:
+As a result, all four phases feature different mechanics and thus play quite differently:
 
 - The [Staff Phase] concentrates on positioning to facilitate cleaving the [Champion Staff].
 - The [Spear Phase] has a large focus on projectile disruption and the overlap between [Worldpiercer] and [Cosmic Charge] with [Greens].
@@ -73,7 +74,7 @@ As a result, all four phases play quite differently, as the squad will have to d
 
 ### <img class='inline empowered'> Empowered and Weapon Management
 
-Vloxx, similarly to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), will *actively* gain <img class='inline empowered'> [Empowered] stacks whenever players fail mechanics. However, unlike these other encounters, Vloxx also has several sources of *passive* gain. Left alone, the boss will gradually accumulate <img class='inline empowered'> [Empowered] until the squad wipes, either due to damage or via enrage.
+Vloxx, similarly to other bosses such as [Cerus](https://silverhalf.github.io/temple-of-febe/) and [Greer](https://silverhalf.github.io/mount-balrior/greer/overview.html), will *actively* gain <img class='inline empowered'> [Empowered] stacks whenever players fail mechanics. However, unlike these other encounters, Vloxx also has several sources of *passive* gain. Left alone, the boss will gradually accumulate <img class='inline empowered'> [Empowered] until the squad wipes, due to either damage or enrage.
 
 As a result, it is not sufficient to play the encounter without failing mechanics: groups are forced to actively reduce the number of <img class='inline empowered'> stacks on the boss by engaging with the <img class='inline ascension'> [Ascension] mechanic. This results in significant strategic considerations in order to efficiently aggro any [Champion Weapons] to the boss, cleave them down and CC them.
 
@@ -85,9 +86,9 @@ When done correctly, this results in weapons granting fewer <img class='inline e
 
 [Judgement of Eternity], mostly known as [Greens], is one of the encounter's more challenging mechanics. This attack is present in all four phases, and requires careful attention and some improvisation to solve reliably.
 
-Two common strategies exist for this mechanic:
+Since greens are only assigned to the <img class='inline fixate-icon'> [Fixate] and closest players, two common strategies exist for this mechanic:
 - [Anchor Greens](../mechanics/index.html#strategy-anchors) assigns two players, called *anchors*, to bait the mechanic.
-- [Subgroup Greens](../mechanics/index.html#strategy-subgroups) has four people (an entire subgroup minus the healer) bait the greens.
+- [Subgroup Greens](../mechanics/index.html#strategy-subgroups) has four people (an entire subgroup minus the healer) bait the mechanic.
 
 {: .note}
 Click on the links above to view in-depth descriptions for both strategies.
@@ -149,7 +150,7 @@ The following code can be pasted into the [Commander Markers](https://blishhud.c
 eyJlbmFibGVkIjp0cnVlLCJuYW1lIjoiTWFya2VycyIsImRlc2NyaXB0aW9uIjoiZGVzY3JpcHRpb24iLCJtYXBJZCI6MTYzOCwidHJpZ2dlciI6eyJ4IjowLjAsInkiOjAuMCwieiI6MC4wfSwibWFya2VycyI6W3siaSI6MiwiZCI6Im1hcmtlciBuYW1lIiwieCI6MzA3LjU2ODEsInkiOjM5NS40NzcwODEsInoiOjMxNC44ODA0NjN9LHsiaSI6MSwiZCI6bnVsbCwieCI6MzAxLjA3MTc3NywieSI6NDA4LjYxNiwieiI6MzE0LjgzNzM3Mn0seyJpIjo2LCJkIjpudWxsLCJ4IjozMDcuNTY4MSwieSI6Mzk1LjQ3NzA4MSwieiI6MzE0Ljg4MDQ2M30seyJpIjo1LCJkIjpudWxsLCJ4IjozMDcuNTU3NjQ4LCJ5IjozOTUuNzE3MywieiI6MzE0Ljg1NTEzM30seyJpIjo3LCJkIjpudWxsLCJ4IjozMDIuMDE2NTcxLCJ5IjozODguODAxMDU2LCJ6IjozMTQuODM3NDMzfSx7ImkiOjMsImQiOm51bGwsIngiOjIxNy4yMzY0NSwieSI6NDAxLjA5NDIsInoiOjMxNC4xNDcyNDd9LHsiaSI6NCwiZCI6bnVsbCwieCI6MjE4LjA5MDI0LCJ5IjozOTEuMTM2NywieiI6MzE0LjI1NX0seyJpIjo4LCJkIjpudWxsLCJ4IjoyMDguMTg1MDg5LCJ5IjozOTUuNDU1MzIyLCJ6IjozMTQuMDQ5MTY0fV19
 ```
 
-Alternatively, you can download a marker pack for [TaimiHUD](https://taimihud.com/) [here](./vloxx.markers).
+Alternatively, you can download a marker pack for [TaimiHUD](https://taimihud.com/) [here](./vloxx.markers). Place it in the `.../Guild Wars 2/addons/Taimi/markers` folder to see it in-game.
 </div>
 </details>
 
@@ -181,9 +182,139 @@ The encounter generally favours *condition damage*, since phases are long and co
 
 ## First Phase
 
+In this phase, Vloxx will wield his staff and have access to [staff skills](../mechanics/index.html#staff-attacks). These feature a large amount of projectiles, which should be dodged or healed, but ideally not reflected due to the risk of interacting with [Eternal Reflection].
+
+{: .note}
+The mechanic order described in this phase is the standard that most players will see in most pulls. However, Vloxx can self-interrupt if he's forced to move, resulting in a new order. This can be avoided by maintaining constant <img class='inline immobile'> [Immobile] uptime.
+
+#### Before the Fight
+
+- Place down [markers].
+- Decide on a [green strategy](#solving-greens). Divide the squad into groups based on the strategy.
+- Set up a [rotation](#projectile-management) for projectile management in phase 2 and phase 4.
+
+---
+
+#### Opening Sequence
+
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    greens("`<img class='medium greens'> Greens`")
+    curse("`<img class='medium curse'> Surrounding Curse`")
+    orb("`<img class='medium orb'> Annihilating Orb`")
+    pools("`<img class='medium pools'> Pools`")
+
+    greens --> curse
+    curse --> orb
+    orb --> pools
+```
+
+{: .note}
+Not pictured in the diagram above are various casts of [Eternal Reflection], which are common enough that representing them would be counterproductive.
+
+Begin the fight by having one person walk into the arena and then immediately exit. They will gain the initial <img class='inline fixate-icon'> [Fixate], and the whole squad will be teleported to the middle of the arena without having to walk in. This also ensures that only the <img class='inline fixate-icon'> [Fixate] will get a [green], since everyone else will be out of range.
+
+After the green pops, the <img class='inline fixate-icon'> [Fixate] should stand on <img class='inline circle'> to bait [Annihilating Orb] towards the [Champion Staff] on <img class='inline arrow'>. Healers should provide <img class='inline stability'> [Stability] for this mechanic using <img class='inline marshal'> [Tale of the Valiant Marshal] as it will be off-cooldown when required. <img class='inline august-queen'> [Tale of the August Queen] should also be used to protect players from the boonstrip under the orb.
+
+Provide <img class='inline superspeed'> [Superspeed] to get to the boss while jumping or dodging the shockwave from [Annihilating Orb]. Stand to the side of his hitbox in order to bait the [Champion Staff] closer and start cleaving it down. Do not stand between the boss and the arena wall: this can cause the staff to overlap completely with Vloxx's hitbox, which will cause him to walk away until they no longer overlap.
+
+<img class=center width='80%' src="./p1-bait.webp">
+
+{: .warning}
+The [Champion Staff] is affected by movement-impairing conditions such as <img class='inline immobile'> [Immobile] and <img class='inline chilled'> [Chilled]. For this reason, groups should try to avoid applying conditions to it, including using skills such as <img class='inline epidemic'> [Epidemic], until it can be cleaved.
+
+Healers can immediately target the staff once it's close, so they are ready to CC it when it reaches 25% HP. Have players walk away from it beforehand so that they do not prematurely pick up any <img class='inline ascension'> [Ascension].
+
+{: .warning}
+Only collect orbs if there are more than one stack of <img class='inline empowered'> [Empowered] on the boss. This is because orbs will only be generated when CCing a weapon if Vloxx has at least one <img class='inline empowered'> stack.
+
+Players targeted by [Probability Distribution] (including the <img class='inline fixate-icon'> [Fixate]) can place it down between the boss and the arena, leaving some free space closer to the boss if possible. The <img class='inline fixate-icon'> [Fixate] should then stand opposite from the rest of the group, baiting [Eternal Reflection] away from them.
+
+---
+
+#### Second Sequence
+
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    greens("`<img class='medium greens'> Greens`")
+    curse("`<img class='medium curse'> Surrounding Curse`")
+    orb("`<img class='medium orb'> Annihilating Orb`")
+    chains("`<img class='medium chains'> Chains`")
+
+    chains --> orb
+    orb --> greens
+    greens --> curse
+```
+
+The <img class='inline fixate-icon'> [Fixate] should move on group before [chains] start spawning. As soon as the third green appears, the healers will <img class='inline stunbreak'> [Stunbreak] using <img class='inline marshal'> [Tale of the Valiant Marshal]. Players should pay attention so that greens do not overlap and at least two people are present in each green.
+
+Immediately after the <img class='inline stunbreak'> [Stunbreak], the <img class='inline fixate-icon'> [Fixate] should position between Vloxx and the arena wall to bait [Annihilating Orb]. When done correctly, this ensures that the ensuing dash is interrupted by the arena wall, resulting in minimal movement by the boss and increased damage uptime. Healers should provide <img class='inline stability'> [Stability] for the dash and shockwave using <img class='inline crescendo'> [Crescendo].
+
+After the dash, players should be ready to bait [Greens]. This is the first time in the encounter that they will actually need to be solved, but this should be easy since the <img class='inline fixate-icon'> [Fixate] should still be the person that started the fight, as less than a minute will have passed.
+
+---
+
+#### Third Sequence
+
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    greens("`<img class='medium greens'> Greens`")
+    orb("`<img class='medium orb'> Annihilating Orb`")
+    chains("`<img class='medium chains'> Chains`")
+    pools("`<img class='medium pools'> Pools`")
+
+    pools --> orb
+    orb --> chains
+    chains --> greens
+```
+
+Place the [pools] from [Probability Distribution] away from the group, towards the wall. This mechanic usually coincides with a new <img class='inline fixate-icon'> [Fixate], who should then position between the boss and <img class='inline arrow'> to bait the dash towards the [Champion Staff], as it will be respawning soon.
+
+[Chains] and [Greens] are then solved the same as previously. Groups with high DPS should be phasing during this sequence.
+
+---
+
+#### Final Sequence
+
+```mermaid
+flowchart LR
+    %%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+    linkStyle default stroke:#7fdefd,stroke-width:3px,color:#7fdefd,font-size:13px,background-color:#000000
+    classDef default fill:#000000,stroke:#7fdefd,color:#7fdefd
+
+    curse("`<img class='medium curse'> Surrounding Curse`")
+    orb("`<img class='medium orb'> Annihilating Orb`")
+    pools("`<img class='medium pools'> Pools`")
+    final("End of Phase")
+
+    orb --> curse
+    curse --> pools
+    pools --> final
+```
+
+If you get an additional dash, try to bait it again towards <img class='inline arrow'>. The remaining mechanics are not threatening and should be played normally. Groups should not phase much after the final [Probability Distribution], otherwise they will struggle to remain within the enrage timer.
+
 <img class=divider>
 
 ## Second Phase
+
+In very high DPS groups that rapidly complete the split phase, [Judgement of Eternity] will not have come off cooldown before the beginning of the second phase. This will mix up the precise order of mechanics, resulting in the boss dashing first before casting [Judgement of Eternity]. Most considerations in this section remain valid, but players will have to adapt to the new order.
+
+#### First Split Phase
+
+After phasing the boss to 70%
 
 <img class=divider>
 
@@ -200,11 +331,14 @@ The encounter generally favours *condition damage*, since phases are long and co
 <!-- Links to other pages in the guide -->
 [Judgement of Eternity]: ../mechanics/index.html#judgement-of-eternity
 [Greens]: ../mechanics/index.html#judgement-of-eternity
+[green]: ../mechanics/index.html#judgement-of-eternity
 [Probability Distribution]: ../mechanics/index.html#probability-distribution
+[pools]: ../mechanics/index.html#probability-distribution
 [Visions of Eternity]: ../mechanics/index.html#visions-of-eternity
 [Threshold of Eternity]: ../mechanics/index.html#threshold-of-eternity
 [Annihilating Orb]: ../mechanics/index.html#annihilating-orb
 [Ascension's Sacrifice]: ../mechanics/index.html#ascensions-sacrifice
+[chains]: ../mechanics/index.html#ascensions-sacrifice
 [Eternal Reflection]: ../mechanics/index.html#eternal-reflection
 [Surrounding Curse]: ../mechanics/index.html#surrounding-curse
 [Cosmic Charge]: ../mechanics/index.html#cosmic-charge
@@ -230,6 +364,8 @@ The encounter generally favours *condition damage*, since phases are long and co
 [Phase 4]: #final-phase
 [Final Phase]: #final-phase
 
+[markers]: #markers
+
 <!-- Links to classes and specializations -->
 [Vindicator]: https://wiki.guildwars2.com/wiki/Vindicator
 [Necromancers]: https://wiki.guildwars2.com/wiki/Necromancer
@@ -249,6 +385,7 @@ The encounter generally favours *condition damage*, since phases are long and co
 [Tale of the Valiant Marshal]: https://wiki.guildwars2.com/wiki/Tale_of_the_Valiant_Marshal
 [Tale of the August Queen]: https://wiki.guildwars2.com/wiki/Tale_of_the_August_Queen
 [Epidemic]: https://wiki.guildwars2.com/wiki/Epidemic
+[Crescendo]: https://wiki.guildwars2.com/wiki/Crescendo
 
 <!-- Links to buffs and debuffs -->
 [Downstating]: https://wiki.guildwars2.com/wiki/Downstate
@@ -278,6 +415,7 @@ The encounter generally favours *condition damage*, since phases are long and co
 [Superspeed]: https://wiki.guildwars2.com/wiki/Superspeed
 [Aegis]: https://wiki.guildwars2.com/wiki/Aegis
 [Alacrity]: https://wiki.guildwars2.com/wiki/Alacrity
+[Immobile]: https://wiki.guildwars2.com/wiki/Immobile
 
 <!-- Links to enemies and enemy skills -->
 [Champion Staff]: ../mechanics/index.html#weapons
